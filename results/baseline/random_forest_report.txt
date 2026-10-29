@@ -1,0 +1,8 @@
+              precision    recall  f1-score   support
+
+      benign       0.97      0.96      0.97       510
+  ransomware       0.96      0.97      0.96       465
+
+    accuracy                           0.96       975
+   macro avg       0.96      0.96      0.96       975
+weighted avg       0.96      0.96      0.96       975

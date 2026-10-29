@@ -1,0 +1,41 @@
+﻿# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Generated models and experiment outputs
+models/
+outputs/
+reports/generated/
+mlruns/
+
+# Raw and derived dataset files are reproducible/local artifacts
+dataset/raw/
+dataset/processed/*.csv
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.bak
+*.before_*
+results/live_btf/
+results/offline_detection_alert_demo_*/
+etreports\ -Recurse\ -File
+t\ n\ FEATURE\ ANALYSIS\ SCRIPT

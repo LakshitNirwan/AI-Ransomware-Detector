@@ -1,0 +1,19 @@
+{
+  "seed": 42,
+  "target": "sample_type",
+  "subset_sizes": [
+    31,
+    64,
+    100,
+    159
+  ],
+  "train_samples": 3905,
+  "test_samples": 975,
+  "elapsed_seconds": 5.45,
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "xgboost"
+  ],
+  "note": "Subset ranking was performed on training data only. The fixed test set is used for comparison and should not be repeatedly used for tuning."
+}

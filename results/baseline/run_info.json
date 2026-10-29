@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "target": "sample_type",
+  "features": 483,
+  "train_samples": 3905,
+  "test_samples": 975,
+  "elapsed_seconds": 2.34,
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "xgboost"
+  ],
+  "note": "Metrics are from the surviving fixed test set; no tuning performed."
+}

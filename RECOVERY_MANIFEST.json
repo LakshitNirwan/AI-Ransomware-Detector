@@ -1,0 +1,30 @@
+{
+  "recovery_type": "partial chat-based reconstruction",
+  "original_repository_available": false,
+  "observed_original_path": "C:\\\\PERSONAL\\\\Projects\\\\AI-Ransomware-Detector",
+  "known_test_path": "C:\\\\Users\\\\suret\\\\AI-Ransomware-Test",
+  "evidence_backed_files": [
+    "features/btf/schema.py",
+    "features/transformation/metadata.py",
+    "features/transformation/kernel_file_processor.py",
+    "features/transformation/analyzer.py",
+    "features/transformation/correlator.py"
+  ],
+  "scaffold_or_inferred_files": [
+    "features/transformation/schema.py",
+    "features/transformation/state_tracker.py",
+    "features/transformation/etw_correlator.py",
+    "monitor/etw_collector.py",
+    "scripts/*",
+    "tests/*"
+  ],
+  "missing_originals": [
+    "complete repository tree",
+    "full original dataset and derived datasets",
+    "complete 338-row XGBoost importance output",
+    "trained model/preprocessing artefacts",
+    "complete ETW collector internals",
+    "all original tests/configuration/logs/notebooks/docs"
+  ],
+  "dataset_warning": "The included mapping CSVs are partial examples, not the original complete dataset."
+}

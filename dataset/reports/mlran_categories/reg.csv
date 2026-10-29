@@ -1,0 +1,9 @@
+feature_id,feature_name,mlran_category,runtime_category,runtime_status,reason
+31844,REG:OPENED:HKEY_CURRENT_USER\Software\Borland\Delphi\Locales,REG,,,
+35566,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\CTF\LayoutIcon\0409\00020409,REG,,,
+39482,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer,REG,,,
+40471,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58ed-7f9a-11ef-945b-806e6f6e6963}\,REG,,,
+100647,REG:OPENED:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\KnownClasses,REG,,,
+140099,REG:READ:HKEY_CURRENT_USER\Keyboard Layout\Toggle\Hotkey,REG,,,
+147738,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Command Processor\AutoRun,REG,,,
+153296,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58ed-7f9a-11ef-945b-806e6f6e6963}\Data,REG,,,

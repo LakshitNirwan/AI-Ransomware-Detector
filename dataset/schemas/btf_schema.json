@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "name": "Behavioral Telemetry Features (BTF)",
+  "feature_count": 31,
+  "dimensions": {
+    "file_activity": [
+      "open",
+      "read",
+      "write",
+      "create",
+      "delete",
+      "rename",
+      "enumerate"
+    ],
+    "process_activity": [
+      "create",
+      "enumerate",
+      "open",
+      "memory_write",
+      "thread_context"
+    ],
+    "registry_activity": [
+      "open",
+      "read",
+      "query",
+      "write",
+      "create",
+      "delete",
+      "enumerate"
+    ],
+    "network_activity": [
+      "connect",
+      "dns",
+      "http",
+      "icmp",
+      "socket"
+    ],
+    "resource_activity": [
+      "memory_allocate",
+      "memory_protect",
+      "handle_activity"
+    ],
+    "execution_activity": [
+      "process_start",
+      "injection",
+      "persistence",
+      "exception_handler"
+    ]
+  },
+  "feature_names": [
+    "file_activity.open",
+    "file_activity.read",
+    "file_activity.write",
+    "file_activity.create",
+    "file_activity.delete",
+    "file_activity.rename",
+    "file_activity.enumerate",
+    "process_activity.create",
+    "process_activity.enumerate",
+    "process_activity.open",
+    "process_activity.memory_write",
+    "process_activity.thread_context",
+    "registry_activity.open",
+    "registry_activity.read",
+    "registry_activity.query",
+    "registry_activity.write",
+    "registry_activity.create",
+    "registry_activity.delete",
+    "registry_activity.enumerate",
+    "network_activity.connect",
+    "network_activity.dns",
+    "network_activity.http",
+    "network_activity.icmp",
+    "network_activity.socket",
+    "resource_activity.memory_allocate",
+    "resource_activity.memory_protect",
+    "resource_activity.handle_activity",
+    "execution_activity.process_start",
+    "execution_activity.injection",
+    "execution_activity.persistence",
+    "execution_activity.exception_handler"
+  ],
+  "label_column": "label",
+  "label_mapping": {
+    "0": "legitimate",
+    "1": "ransomware"
+  }
+}

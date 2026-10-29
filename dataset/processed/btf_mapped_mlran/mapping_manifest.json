@@ -1,0 +1,915 @@
+{
+  "mapping_type": "MLRan presence-sum proxy; not observed BTF/ETW event counts",
+  "source_mapping_file": "dataset\\reports\\mlran_candidate_runtime_mapping.csv",
+  "target_column": "sample_type",
+  "canonical_btf_feature_count": 31,
+  "features": {
+    "file_activity.open": {
+      "source_runtime_categories": [
+        "file_open_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "1924020",
+          "feature_name": "FILE:OPENED:\\\\?\\pipe\\wkssvc"
+        },
+        {
+          "feature_id": "1924061",
+          "feature_name": "FILE:OPENED:c:\\"
+        },
+        {
+          "feature_id": "1927580",
+          "feature_name": "FILE:OPENED:c:\\program files (x86)"
+        },
+        {
+          "feature_id": "2055798",
+          "feature_name": "FILE:OPENED:c:\\program files\\windows nt\\accessories\\wordpad.exe"
+        },
+        {
+          "feature_id": "2117027",
+          "feature_name": "FILE:OPENED:c:\\windows\\globalization\\sorting\\sortdefault.nls"
+        },
+        {
+          "feature_id": "2118086",
+          "feature_name": "FILE:OPENED:c:\\windows\\system32"
+        },
+        {
+          "feature_id": "2120431",
+          "feature_name": "FILE:OPENED:c:\\windows\\system32\\en-us\\imageres.dll.mui"
+        },
+        {
+          "feature_id": "2120452",
+          "feature_name": "FILE:OPENED:c:\\windows\\system32\\en-us\\netmsg.dll.mui"
+        }
+      ],
+      "source_feature_count": 8,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "file_activity.read": {
+      "source_runtime_categories": [
+        "file_read_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "2129256",
+          "feature_name": "FILE:READ:\\\\?\\pipe\\wkssvc"
+        }
+      ],
+      "source_feature_count": 1,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "file_activity.write": {
+      "source_runtime_categories": [
+        "file_write_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "60",
+          "feature_name": "API:NtWriteFile"
+        },
+        {
+          "feature_id": "2195841",
+          "feature_name": "FILE:WRITTEN:\\\\?\\pipe\\wkssvc"
+        }
+      ],
+      "source_feature_count": 2,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "file_activity.create": {
+      "source_runtime_categories": [
+        "file_recreation_activity",
+        "directory_create",
+        "directory_create_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "2185628",
+          "feature_name": "FILE:RECREATED:\\??\\nsi"
+        },
+        {
+          "feature_id": "124",
+          "feature_name": "API:CreateDirectoryW"
+        },
+        {
+          "feature_id": "2625467",
+          "feature_name": "DIRECTORY:CREATED:c:\\users"
+        },
+        {
+          "feature_id": "2625469",
+          "feature_name": "DIRECTORY:CREATED:c:\\users\\administrator"
+        },
+        {
+          "feature_id": "2625487",
+          "feature_name": "DIRECTORY:CREATED:c:\\users\\administrator\\appdata"
+        },
+        {
+          "feature_id": "2625820",
+          "feature_name": "DIRECTORY:CREATED:c:\\users\\administrator\\appdata\\local\\microsoft\\windows\\wer\\reportarchive"
+        },
+        {
+          "feature_id": "2633869",
+          "feature_name": "DIRECTORY:CREATED:c:\\users\\administrator\\appdata\\roaming"
+        }
+      ],
+      "source_feature_count": 7,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "file_activity.delete": {
+      "source_runtime_categories": [
+        "file_state_modification",
+        "directory_deletion"
+      ],
+      "source_features": [
+        {
+          "feature_id": "75",
+          "feature_name": "API:NtSetInformationFile"
+        },
+        {
+          "feature_id": "186",
+          "feature_name": "API:RemoveDirectoryA"
+        },
+        {
+          "feature_id": "208",
+          "feature_name": "API:RemoveDirectoryW"
+        }
+      ],
+      "source_feature_count": 3,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "file_activity.rename": {
+      "source_runtime_categories": [],
+      "source_features": [],
+      "source_feature_count": 0,
+      "mapping_status": "unsupported_zero",
+      "aggregation": "constant zero"
+    },
+    "file_activity.enumerate": {
+      "source_runtime_categories": [
+        "directory_enumeration"
+      ],
+      "source_features": [
+        {
+          "feature_id": "87",
+          "feature_name": "API:NtQueryDirectoryFile"
+        },
+        {
+          "feature_id": "2636843",
+          "feature_name": "DIRECTORY:ENUMERATED:c:\\documents and settings\\*.*"
+        },
+        {
+          "feature_id": "2643480",
+          "feature_name": "DIRECTORY:ENUMERATED:c:\\perflogs\\*.*"
+        },
+        {
+          "feature_id": "2643483",
+          "feature_name": "DIRECTORY:ENUMERATED:c:\\perflogs\\admin\\*.*"
+        },
+        {
+          "feature_id": "2682340",
+          "feature_name": "DIRECTORY:ENUMERATED:c:\\users\\administrator"
+        },
+        {
+          "feature_id": "2722838",
+          "feature_name": "DIRECTORY:ENUMERATED:c:\\windows\\system32\\*.*"
+        }
+      ],
+      "source_feature_count": 6,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "process_activity.create": {
+      "source_runtime_categories": [
+        "process_creation_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "8",
+          "feature_name": "API:CreateProcessInternalW"
+        }
+      ],
+      "source_feature_count": 1,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "process_activity.enumerate": {
+      "source_runtime_categories": [
+        "process_enumeration",
+        "process_snapshot_enumeration"
+      ],
+      "source_features": [
+        {
+          "feature_id": "43",
+          "feature_name": "API:Process32NextW"
+        },
+        {
+          "feature_id": "6468166",
+          "feature_name": "SIGNATURE:injection_process_search"
+        },
+        {
+          "feature_id": "46",
+          "feature_name": "API:CreateToolhelp32Snapshot"
+        },
+        {
+          "feature_id": "94",
+          "feature_name": "API:Process32FirstW"
+        }
+      ],
+      "source_feature_count": 4,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "process_activity.open": {
+      "source_runtime_categories": [
+        "process_interaction"
+      ],
+      "source_features": [
+        {
+          "feature_id": "37",
+          "feature_name": "API:NtOpenProcess"
+        }
+      ],
+      "source_feature_count": 1,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "process_activity.memory_write": {
+      "source_runtime_categories": [
+        "cross_process_memory_write"
+      ],
+      "source_features": [
+        {
+          "feature_id": "155",
+          "feature_name": "API:WriteProcessMemory"
+        },
+        {
+          "feature_id": "6468170",
+          "feature_name": "SIGNATURE:injection_write_memory"
+        }
+      ],
+      "source_feature_count": 2,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "process_activity.thread_context": {
+      "source_runtime_categories": [
+        "thread_context_modify",
+        "thread_context_read"
+      ],
+      "source_features": [
+        {
+          "feature_id": "158",
+          "feature_name": "API:NtSetContextThread"
+        },
+        {
+          "feature_id": "157",
+          "feature_name": "API:NtGetContextThread"
+        }
+      ],
+      "source_feature_count": 2,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "registry_activity.open": {
+      "source_runtime_categories": [
+        "registry_open_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "31844",
+          "feature_name": "REG:OPENED:HKEY_CURRENT_USER\\Software\\Borland\\Delphi\\Locales"
+        },
+        {
+          "feature_id": "35566",
+          "feature_name": "REG:OPENED:HKEY_CURRENT_USER\\Software\\Microsoft\\CTF\\LayoutIcon\\0409\\00020409"
+        },
+        {
+          "feature_id": "39482",
+          "feature_name": "REG:OPENED:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer"
+        },
+        {
+          "feature_id": "39484",
+          "feature_name": "REG:OPENED:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced"
+        },
+        {
+          "feature_id": "40471",
+          "feature_name": "REG:OPENED:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{748d58ed-7f9a-11ef-945b-806e6f6e6963}\\"
+        },
+        {
+          "feature_id": "40473",
+          "feature_name": "REG:OPENED:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{748d58ee-7f9a-11ef-945b-806e6f6e6963}\\"
+        },
+        {
+          "feature_id": "40475",
+          "feature_name": "REG:OPENED:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{748d58f1-7f9a-11ef-945b-806e6f6e6963}\\"
+        },
+        {
+          "feature_id": "40479",
+          "feature_name": "REG:OPENED:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{887e67eb-1985-11ef-9840-806e6f6e6963}\\"
+        },
+        {
+          "feature_id": "40480",
+          "feature_name": "REG:OPENED:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{887e67ec-1985-11ef-9840-806e6f6e6963}\\"
+        },
+        {
+          "feature_id": "40481",
+          "feature_name": "REG:OPENED:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{887e67ef-1985-11ef-9840-806e6f6e6963}\\"
+        },
+        {
+          "feature_id": "40714",
+          "feature_name": "REG:OPENED:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Comdlg32"
+        },
+        {
+          "feature_id": "40716",
+          "feature_name": "REG:OPENED:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer"
+        },
+        {
+          "feature_id": "40753",
+          "feature_name": "REG:OPENED:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Shell Extensions\\Cached"
+        },
+        {
+          "feature_id": "100647",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\CTF\\KnownClasses"
+        },
+        {
+          "feature_id": "104290",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\LanguagePack\\SurrogateFallback"
+        },
+        {
+          "feature_id": "104300",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\LanguagePack\\SurrogateFallback\\MS Sans Serif"
+        },
+        {
+          "feature_id": "110219",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\explorer\\FolderDescriptions\\{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}"
+        },
+        {
+          "feature_id": "110220",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\explorer\\FolderDescriptions\\{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\\PropertyBag"
+        },
+        {
+          "feature_id": "119780",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\Software\\Microsoft\\CTF\\TIP\\{0000897b-83df-4b96-be07-0fb58b01c4a4}\\LanguageProfile\\0x00000000\\{0001bea3-ed56-483d-a2e2-aeae25577436}"
+        },
+        {
+          "feature_id": "120873",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList\\S-1-5-21-1333523494-3206289307-1491016761-500"
+        },
+        {
+          "feature_id": "120874",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList\\S-1-5-21-349486357-1417008628-870289929-500"
+        },
+        {
+          "feature_id": "120875",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList\\S-1-5-21-4114181432-2397392814-2180606575-500"
+        },
+        {
+          "feature_id": "124264",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData"
+        },
+        {
+          "feature_id": "130140",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Installer"
+        }
+      ],
+      "source_feature_count": 24,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "registry_activity.read": {
+      "source_runtime_categories": [
+        "registry_read_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "163",
+          "feature_name": "API:RegQueryInfoKeyW"
+        },
+        {
+          "feature_id": "140099",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Keyboard Layout\\Toggle\\Hotkey"
+        },
+        {
+          "feature_id": "140100",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Keyboard Layout\\Toggle\\Language Hotkey"
+        },
+        {
+          "feature_id": "140101",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Keyboard Layout\\Toggle\\Layout Hotkey"
+        },
+        {
+          "feature_id": "147738",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Command Processor\\AutoRun"
+        },
+        {
+          "feature_id": "147744",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Command Processor\\CompletionChar"
+        },
+        {
+          "feature_id": "147745",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Command Processor\\DefaultColor"
+        },
+        {
+          "feature_id": "147746",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Command Processor\\DelayedExpansion"
+        },
+        {
+          "feature_id": "147747",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Command Processor\\DisableUNCCheck"
+        },
+        {
+          "feature_id": "147748",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Command Processor\\EnableExtensions"
+        },
+        {
+          "feature_id": "147762",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Command Processor\\PathCompletionChar"
+        },
+        {
+          "feature_id": "152555",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows\\DragDelay"
+        },
+        {
+          "feature_id": "153169",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\\UseDoubleClickTimer"
+        },
+        {
+          "feature_id": "153296",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{748d58ed-7f9a-11ef-945b-806e6f6e6963}\\Data"
+        },
+        {
+          "feature_id": "153297",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{748d58ed-7f9a-11ef-945b-806e6f6e6963}\\Generation"
+        },
+        {
+          "feature_id": "153298",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{748d58ee-7f9a-11ef-945b-806e6f6e6963}\\Data"
+        },
+        {
+          "feature_id": "153299",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{748d58ee-7f9a-11ef-945b-806e6f6e6963}\\Generation"
+        },
+        {
+          "feature_id": "153300",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{748d58f1-7f9a-11ef-945b-806e6f6e6963}\\Data"
+        },
+        {
+          "feature_id": "153301",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{748d58f1-7f9a-11ef-945b-806e6f6e6963}\\Generation"
+        },
+        {
+          "feature_id": "153302",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{7ace8c1d-1d34-11ef-b467-806e6f6e6963}\\Data"
+        },
+        {
+          "feature_id": "153303",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{7ace8c1d-1d34-11ef-b467-806e6f6e6963}\\Generation"
+        },
+        {
+          "feature_id": "153304",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{7ace8c1e-1d34-11ef-b467-806e6f6e6963}\\Data"
+        },
+        {
+          "feature_id": "153305",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{7ace8c1e-1d34-11ef-b467-806e6f6e6963}\\Generation"
+        },
+        {
+          "feature_id": "153306",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{7ace8c21-1d34-11ef-b467-806e6f6e6963}\\Data"
+        },
+        {
+          "feature_id": "153307",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{7ace8c21-1d34-11ef-b467-806e6f6e6963}\\Generation"
+        },
+        {
+          "feature_id": "153308",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{887e67eb-1985-11ef-9840-806e6f6e6963}\\Data"
+        },
+        {
+          "feature_id": "153309",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{887e67eb-1985-11ef-9840-806e6f6e6963}\\Generation"
+        },
+        {
+          "feature_id": "153310",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{887e67ec-1985-11ef-9840-806e6f6e6963}\\Data"
+        },
+        {
+          "feature_id": "153311",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{887e67ec-1985-11ef-9840-806e6f6e6963}\\Generation"
+        },
+        {
+          "feature_id": "153312",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{887e67ef-1985-11ef-9840-806e6f6e6963}\\Data"
+        },
+        {
+          "feature_id": "153313",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\CPC\\Volume\\{887e67ef-1985-11ef-9840-806e6f6e6963}\\Generation"
+        },
+        {
+          "feature_id": "157202",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Wpad\\WpadOverride"
+        },
+        {
+          "feature_id": "157319",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\AllowFileCLSIDJunctions"
+        },
+        {
+          "feature_id": "157348",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoClose"
+        },
+        {
+          "feature_id": "157355",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoDrives"
+        },
+        {
+          "feature_id": "157368",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoNetConnectDisconnect"
+        },
+        {
+          "feature_id": "157376",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoRecentDocsHistory"
+        },
+        {
+          "feature_id": "157381",
+          "feature_name": "REG:READ:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoRun"
+        },
+        {
+          "feature_id": "214391",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\CTF\\TIP\\{0000897b-83df-4b96-be07-0fb58b01c4a4}\\LanguageProfile\\0x00000000\\{0001bea3-ed56-483d-a2e2-aeae25577436}\\Enable"
+        },
+        {
+          "feature_id": "227164",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\OLE\\PageAllocatorSystemHeapIsPrivate"
+        },
+        {
+          "feature_id": "227165",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\OLE\\PageAllocatorUseSystemHeap"
+        },
+        {
+          "feature_id": "229503",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\SQMClient\\Windows\\DisabledSessions\\GlobalSession"
+        },
+        {
+          "feature_id": "229504",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\SQMClient\\Windows\\DisabledSessions\\MachineThrottling"
+        },
+        {
+          "feature_id": "235995",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\FontSubstitutes\\MS Shell Dlg"
+        },
+        {
+          "feature_id": "237271",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList\\S-1-5-21-1333523494-3206289307-1491016761-500\\ProfileImagePath"
+        },
+        {
+          "feature_id": "237272",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList\\S-1-5-21-349486357-1417008628-870289929-500\\ProfileImagePath"
+        },
+        {
+          "feature_id": "237274",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList\\S-1-5-21-4114181432-2397392814-2180606575-500\\ProfileImagePath"
+        },
+        {
+          "feature_id": "239745",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DevicePath"
+        },
+        {
+          "feature_id": "248012",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\AllowFileCLSIDJunctions"
+        },
+        {
+          "feature_id": "378629",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\CTF\\EnableAnchorContext"
+        },
+        {
+          "feature_id": "401579",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows NT\\CurrentVersion\\Windows\\LoadAppInit_DLLs"
+        },
+        {
+          "feature_id": "402712",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\CommonFilesDir"
+        },
+        {
+          "feature_id": "402851",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\ProgramFilesDir"
+        },
+        {
+          "feature_id": "414018",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\Windows Error Reporting\\WMR\\Disable"
+        },
+        {
+          "feature_id": "417084",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\CMF\\Config\\SYSTEM"
+        },
+        {
+          "feature_id": "417548",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Nls\\CodePage\\950"
+        },
+        {
+          "feature_id": "418321",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Nls\\Language Groups\\1"
+        },
+        {
+          "feature_id": "418350",
+          "feature_name": "REG:READ:HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\Control\\Nls\\Locale\\00000409"
+        }
+      ],
+      "source_feature_count": 58,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "registry_activity.query": {
+      "source_runtime_categories": [
+        "registry_query_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "63",
+          "feature_name": "API:NtQueryKey"
+        }
+      ],
+      "source_feature_count": 1,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "registry_activity.write": {
+      "source_runtime_categories": [
+        "registry_write_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "47",
+          "feature_name": "API:RegSetValueExW"
+        },
+        {
+          "feature_id": "92",
+          "feature_name": "API:RegSetValueExA"
+        },
+        {
+          "feature_id": "40676",
+          "feature_name": "REG:OPENED:HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Wpad\\{68AD045D-A60B-4E2E-BC0E-3B43DE6B671F}"
+        },
+        {
+          "feature_id": "112411",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\SYSTEM\\ControlSet001\\services\\Winsock\\Setup Migration\\Providers\\Tcpip"
+        },
+        {
+          "feature_id": "113636",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Winsock\\Parameters"
+        },
+        {
+          "feature_id": "113637",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\Winsock\\Setup Migration\\Providers"
+        },
+        {
+          "feature_id": "131181",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Class\\{4d36e972-e325-11ce-bfc1-08002be10318}"
+        },
+        {
+          "feature_id": "131375",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\LDAP"
+        },
+        {
+          "feature_id": "131394",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\Tcpip6\\Parameters\\Winsock"
+        },
+        {
+          "feature_id": "131400",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Winsock"
+        },
+        {
+          "feature_id": "131425",
+          "feature_name": "REG:OPENED:HKEY_LOCAL_MACHINE\\System\\Setup"
+        }
+      ],
+      "source_feature_count": 11,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "registry_activity.create": {
+      "source_runtime_categories": [
+        "registry_key_creation"
+      ],
+      "source_features": [
+        {
+          "feature_id": "66",
+          "feature_name": "API:RegCreateKeyExA"
+        },
+        {
+          "feature_id": "71",
+          "feature_name": "API:RegCreateKeyExW"
+        }
+      ],
+      "source_feature_count": 2,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "registry_activity.delete": {
+      "source_runtime_categories": [
+        "registry_delete_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "225",
+          "feature_name": "API:RegDeleteKeyW"
+        }
+      ],
+      "source_feature_count": 1,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "registry_activity.enumerate": {
+      "source_runtime_categories": [
+        "registry_enumeration"
+      ],
+      "source_features": [
+        {
+          "feature_id": "109",
+          "feature_name": "API:RegEnumValueW"
+        },
+        {
+          "feature_id": "131",
+          "feature_name": "API:RegEnumKeyExW"
+        }
+      ],
+      "source_feature_count": 2,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "network_activity.connect": {
+      "source_runtime_categories": [],
+      "source_features": [],
+      "source_feature_count": 0,
+      "mapping_status": "unsupported_zero",
+      "aggregation": "constant zero"
+    },
+    "network_activity.dns": {
+      "source_runtime_categories": [
+        "dns_lookup_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "6468200",
+          "feature_name": "SIGNATURE:nolookup_communication"
+        }
+      ],
+      "source_feature_count": 1,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "network_activity.http": {
+      "source_runtime_categories": [
+        "http_network_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "6468193",
+          "feature_name": "SIGNATURE:network_http"
+        }
+      ],
+      "source_feature_count": 1,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "network_activity.icmp": {
+      "source_runtime_categories": [
+        "icmp_network_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "6468195",
+          "feature_name": "SIGNATURE:network_icmp"
+        }
+      ],
+      "source_feature_count": 1,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "network_activity.socket": {
+      "source_runtime_categories": [
+        "network_or_socket_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "159",
+          "feature_name": "API:ioctlsocket"
+        },
+        {
+          "feature_id": "193",
+          "feature_name": "API:SendNotifyMessageW"
+        }
+      ],
+      "source_feature_count": 2,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "resource_activity.memory_allocate": {
+      "source_runtime_categories": [
+        "virtual_memory_allocation",
+        "remote_process_allocation"
+      ],
+      "source_features": [
+        {
+          "feature_id": "34",
+          "feature_name": "API:NtAllocateVirtualMemory"
+        },
+        {
+          "feature_id": "6468069",
+          "feature_name": "SIGNATURE:allocates_execute_remote_process"
+        }
+      ],
+      "source_feature_count": 2,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "resource_activity.memory_protect": {
+      "source_runtime_categories": [
+        "memory_protection_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "5",
+          "feature_name": "API:NtProtectVirtualMemory"
+        }
+      ],
+      "source_feature_count": 1,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "resource_activity.handle_activity": {
+      "source_runtime_categories": [],
+      "source_features": [],
+      "source_feature_count": 0,
+      "mapping_status": "unsupported_zero",
+      "aggregation": "constant zero"
+    },
+    "execution_activity.process_start": {
+      "source_runtime_categories": [],
+      "source_features": [],
+      "source_feature_count": 0,
+      "mapping_status": "unsupported_zero",
+      "aggregation": "constant zero"
+    },
+    "execution_activity.injection": {
+      "source_runtime_categories": [
+        "process_injection_execution",
+        "process_injection_memory_modification"
+      ],
+      "source_features": [
+        {
+          "feature_id": "6468169",
+          "feature_name": "SIGNATURE:injection_runpe"
+        },
+        {
+          "feature_id": "6468163",
+          "feature_name": "SIGNATURE:injection_modifies_memory"
+        }
+      ],
+      "source_feature_count": 2,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "execution_activity.persistence": {
+      "source_runtime_categories": [
+        "autorun_persistence_activity"
+      ],
+      "source_features": [
+        {
+          "feature_id": "6468211",
+          "feature_name": "SIGNATURE:persistence_autorun"
+        }
+      ],
+      "source_feature_count": 1,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    },
+    "execution_activity.exception_handler": {
+      "source_runtime_categories": [
+        "exception_handler_registration"
+      ],
+      "source_features": [
+        {
+          "feature_id": "227",
+          "feature_name": "API:RtlAddVectoredExceptionHandler"
+        }
+      ],
+      "source_feature_count": 1,
+      "mapping_status": "mapped",
+      "aggregation": "sum of source binary flags"
+    }
+  },
+  "train_rows": 3905,
+  "test_rows": 975,
+  "mapped_feature_count": 27,
+  "unsupported_zero_features": [
+    "file_activity.rename",
+    "network_activity.connect",
+    "resource_activity.handle_activity",
+    "execution_activity.process_start"
+  ],
+  "warning": "This reconstructed proxy is not the missing historical BTF mapping and cannot establish equivalence to the slide results."
+}

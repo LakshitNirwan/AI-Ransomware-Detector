@@ -1,0 +1,52 @@
+{
+  "dataset_type": "prototype_only",
+  "task": "Normal-vs-Anomaly",
+  "not_validated_as_ransomware_labels": true,
+  "source": "dataset\\raw\\os_kernel\\os_kernel_power_dataset.csv",
+  "label_mapping": {
+    "0": "Normal",
+    "1": "Anomaly"
+  },
+  "feature_count": 31,
+  "feature_names": [
+    "file_activity.open",
+    "file_activity.read",
+    "file_activity.write",
+    "file_activity.create",
+    "file_activity.delete",
+    "file_activity.rename",
+    "file_activity.enumerate",
+    "process_activity.create",
+    "process_activity.enumerate",
+    "process_activity.open",
+    "process_activity.memory_write",
+    "process_activity.thread_context",
+    "registry_activity.open",
+    "registry_activity.read",
+    "registry_activity.query",
+    "registry_activity.write",
+    "registry_activity.create",
+    "registry_activity.delete",
+    "registry_activity.enumerate",
+    "network_activity.connect",
+    "network_activity.dns",
+    "network_activity.http",
+    "network_activity.icmp",
+    "network_activity.socket",
+    "resource_activity.memory_allocate",
+    "resource_activity.memory_protect",
+    "resource_activity.handle_activity",
+    "execution_activity.process_start",
+    "execution_activity.injection",
+    "execution_activity.persistence",
+    "execution_activity.exception_handler"
+  ],
+  "mapping_policy": "Only open/read/write/execve are mapped; unsupported syscalls are not relabeled.",
+  "window_policy": "Grouped by PID and process name over the full source duration; mixed-label groups excluded.",
+  "rows_written": 367,
+  "rows_excluded_for_mixed_labels": 66,
+  "label_counts": {
+    "0": 349,
+    "1": 18
+  }
+}

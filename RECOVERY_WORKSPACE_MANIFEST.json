@@ -1,0 +1,126 @@
+{
+  "workspace_type": "merged recovery workspace, not a verified complete restoration",
+  "base_archive": "AI-Ransomware-Detector-main.zip",
+  "recovery_archive": "AI-Ransomware-Detector-reconstructed.zip",
+  "merge_policy": "Base archive preserved; recovered files added if missing or used to fill zero-byte base files. README replaced. Non-empty base collisions preserved.",
+  "recovered_files_added_or_used": [
+    [
+      "pyproject.toml",
+      "added"
+    ],
+    [
+      "requirements.txt",
+      "filled empty base file"
+    ],
+    [
+      "README.md",
+      "replaced base README"
+    ],
+    [
+      "RECOVERY_MANIFEST.json",
+      "added"
+    ],
+    [
+      "RECOVERED_FILE_TREE.txt",
+      "added"
+    ],
+    [
+      "scripts/__init__.py",
+      "added"
+    ],
+    [
+      "scripts/diagnose_live_filekey_lifecycle.py",
+      "added"
+    ],
+    [
+      "scripts/test_kernel_file_event_shapes.py",
+      "added"
+    ],
+    [
+      "scripts/enrich_xgboost_importance.py",
+      "added"
+    ],
+    [
+      "docs/CHAT_EVIDENCE.md",
+      "added"
+    ],
+    [
+      "monitor/__init__.py",
+      "added"
+    ],
+    [
+      "monitor/etw_collector.py",
+      "added"
+    ],
+    [
+      "features/__init__.py",
+      "added"
+    ],
+    [
+      "tests/__init__.py",
+      "added"
+    ],
+    [
+      "tests/test_btf_schema.py",
+      "added"
+    ],
+    [
+      "tests/test_transformation.py",
+      "added"
+    ],
+    [
+      "dataset/reports/mlran_feature_mapping_final.csv",
+      "added"
+    ],
+    [
+      "dataset/reports/mlran_categories/reg.csv",
+      "added"
+    ],
+    [
+      "features/transformation/etw_correlator.py",
+      "added"
+    ],
+    [
+      "features/transformation/state_tracker.py",
+      "added"
+    ],
+    [
+      "features/transformation/__init__.py",
+      "added"
+    ],
+    [
+      "features/transformation/metadata.py",
+      "added"
+    ],
+    [
+      "features/transformation/schema.py",
+      "added"
+    ],
+    [
+      "features/transformation/kernel_file_processor.py",
+      "added"
+    ],
+    [
+      "features/transformation/analyzer.py",
+      "added"
+    ],
+    [
+      "features/transformation/correlator.py",
+      "added"
+    ],
+    [
+      "features/btf/__init__.py",
+      "added"
+    ],
+    [
+      "features/btf/schema.py",
+      "added"
+    ]
+  ],
+  "dataset_status": {
+    "source_dataset_present": true,
+    "processed_csvs_present": true,
+    "processed_csvs_valid_for_locked_contract": false,
+    "reason": "Processed CSVs currently contain sample_id; expected model matrix is 483 behavioral features plus target, excluding metadata."
+  }
+}

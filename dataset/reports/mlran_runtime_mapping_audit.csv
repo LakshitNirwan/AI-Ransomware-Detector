@@ -1,0 +1,484 @@
+feature_id,feature_name,source_dictionary_name,runtime_category,runtime_status,existing_reason,classification_source
+5,API:NtProtectVirtualMemory,API:NtProtectVirtualMemory,memory_protection_activity,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+8,API:CreateProcessInternalW,API:CreateProcessInternalW,process_creation_activity,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+18,API:LdrGetProcedureAddress,API:LdrGetProcedureAddress,api_context,EXCLUDE,Low-value/context-specific API retained for audit.,existing_partial_mapping
+32,API:CreateActCtxW,API:CreateActCtxW,,UNREVIEWED,,not_recovered
+33,API:GetNativeSystemInfo,API:GetNativeSystemInfo,,UNREVIEWED,,not_recovered
+34,API:NtAllocateVirtualMemory,API:NtAllocateVirtualMemory,virtual_memory_allocation,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+35,API:NtQueryInformationFile,API:NtQueryInformationFile,file_metadata_query,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+37,API:NtOpenProcess,API:NtOpenProcess,process_interaction,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+41,API:CoUninitialize,API:CoUninitialize,,UNREVIEWED,,not_recovered
+43,API:Process32NextW,API:Process32NextW,process_enumeration,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+46,API:CreateToolhelp32Snapshot,API:CreateToolhelp32Snapshot,,UNREVIEWED,,not_recovered
+47,API:RegSetValueExW,API:RegSetValueExW,registry_write_activity,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+49,API:GetSystemMetrics,API:GetSystemMetrics,,UNREVIEWED,,not_recovered
+50,API:NtDelayExecution,API:NtDelayExecution,,UNREVIEWED,,not_recovered
+59,API:CoCreateInstance,API:CoCreateInstance,,UNREVIEWED,,not_recovered
+60,API:NtWriteFile,API:NtWriteFile,file_write_activity,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+63,API:NtQueryKey,API:NtQueryKey,registry_query_activity,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+64,API:OpenServiceW,API:OpenServiceW,,UNREVIEWED,,not_recovered
+65,API:GetComputerNameW,API:GetComputerNameW,,UNREVIEWED,,not_recovered
+66,API:RegCreateKeyExA,API:RegCreateKeyExA,registry_key_creation,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+69,API:SHGetFolderPathW,API:SHGetFolderPathW,,UNREVIEWED,,not_recovered
+71,API:RegCreateKeyExW,API:RegCreateKeyExW,registry_key_creation,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+75,API:NtSetInformationFile,API:NtSetInformationFile,file_state_modification,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+87,API:NtQueryDirectoryFile,API:NtQueryDirectoryFile,directory_enumeration,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+90,API:OpenSCManagerW,API:OpenSCManagerW,,UNREVIEWED,,not_recovered
+92,API:RegSetValueExA,API:RegSetValueExA,,UNREVIEWED,,not_recovered
+94,API:Process32FirstW,API:Process32FirstW,,UNREVIEWED,,not_recovered
+98,API:UuidCreate,API:UuidCreate,,UNREVIEWED,,not_recovered
+108,API:FindResourceExW,API:FindResourceExW,,UNREVIEWED,,not_recovered
+109,API:RegEnumValueW,API:RegEnumValueW,,UNREVIEWED,,not_recovered
+111,API:GetFileAttributesExW,API:GetFileAttributesExW,file_metadata_lookup,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+113,API:DrawTextExW,API:DrawTextExW,,UNREVIEWED,,not_recovered
+114,API:GetFileVersionInfoSizeW,API:GetFileVersionInfoSizeW,,UNREVIEWED,,not_recovered
+116,API:GetTempPathW,API:GetTempPathW,,UNREVIEWED,,not_recovered
+118,API:GetFileVersionInfoW,API:GetFileVersionInfoW,,UNREVIEWED,,not_recovered
+119,API:LoadResource,API:LoadResource,,UNREVIEWED,,not_recovered
+120,API:DeviceIoControl,API:DeviceIoControl,,UNREVIEWED,,not_recovered
+122,API:FindWindowW,API:FindWindowW,,UNREVIEWED,,not_recovered
+124,API:CreateDirectoryW,API:CreateDirectoryW,directory_create,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+130,API:GetSystemDirectoryW,API:GetSystemDirectoryW,,UNREVIEWED,,not_recovered
+131,API:RegEnumKeyExW,API:RegEnumKeyExW,,UNREVIEWED,,not_recovered
+133,API:GetDiskFreeSpaceExW,API:GetDiskFreeSpaceExW,,UNREVIEWED,,not_recovered
+134,API:SetWindowsHookExW,API:SetWindowsHookExW,hook_activity,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+135,API:GetFileInformationByHandle,API:GetFileInformationByHandle,file_metadata_lookup,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+136,API:GetSystemWindowsDirectoryW,API:GetSystemWindowsDirectoryW,,UNREVIEWED,,not_recovered
+148,API:WriteConsoleW,API:WriteConsoleW,,UNREVIEWED,,not_recovered
+150,API:GetComputerNameA,API:GetComputerNameA,,UNREVIEWED,,not_recovered
+155,API:WriteProcessMemory,API:WriteProcessMemory,cross_process_memory_write,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+157,API:NtGetContextThread,API:NtGetContextThread,,UNREVIEWED,,not_recovered
+158,API:NtSetContextThread,API:NtSetContextThread,,UNREVIEWED,,not_recovered
+159,API:ioctlsocket,API:ioctlsocket,,UNREVIEWED,,not_recovered
+163,API:RegQueryInfoKeyW,API:RegQueryInfoKeyW,,UNREVIEWED,,not_recovered
+171,API:GetSystemDirectoryA,API:GetSystemDirectoryA,,UNREVIEWED,,not_recovered
+178,API:FindResourceA,API:FindResourceA,,UNREVIEWED,,not_recovered
+180,API:SHGetSpecialFolderLocation,API:SHGetSpecialFolderLocation,,UNREVIEWED,,not_recovered
+186,API:RemoveDirectoryA,API:RemoveDirectoryA,directory_deletion,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+193,API:SendNotifyMessageW,API:SendNotifyMessageW,,UNREVIEWED,,not_recovered
+195,API:GlobalMemoryStatus,API:GlobalMemoryStatus,,UNREVIEWED,,not_recovered
+198,API:LoadStringA,API:LoadStringA,,UNREVIEWED,,not_recovered
+203,API:GetCursorPos,API:GetCursorPos,,UNREVIEWED,,not_recovered
+208,API:RemoveDirectoryW,API:RemoveDirectoryW,directory_deletion,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+225,API:RegDeleteKeyW,API:RegDeleteKeyW,,UNREVIEWED,,not_recovered
+227,API:RtlAddVectoredExceptionHandler,API:RtlAddVectoredExceptionHandler,exception_handler_registration,ABSTRACT,API semantics generalized to canonical runtime behavior.,existing_partial_mapping
+31844,REG:OPENED:HKEY_CURRENT_USER\Software\Borland\Delphi\Locales,REG:OPENED:HKEY_CURRENT_USER\Software\Borland\Delphi\Locales,,UNREVIEWED,,not_recovered
+35566,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\CTF\LayoutIcon\0409\00020409,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\CTF\LayoutIcon\0409\00020409,,UNREVIEWED,,not_recovered
+39482,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer,,UNREVIEWED,,not_recovered
+39484,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced,,UNREVIEWED,,not_recovered
+40471,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58ed-7f9a-11ef-945b-806e6f6e6963}\,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58ed-7f9a-11ef-945b-806e6f6e6963}\,,UNREVIEWED,,not_recovered
+40473,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58ee-7f9a-11ef-945b-806e6f6e6963}\,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58ee-7f9a-11ef-945b-806e6f6e6963}\,,UNREVIEWED,,not_recovered
+40475,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58f1-7f9a-11ef-945b-806e6f6e6963}\,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58f1-7f9a-11ef-945b-806e6f6e6963}\,,UNREVIEWED,,not_recovered
+40479,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67eb-1985-11ef-9840-806e6f6e6963}\,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67eb-1985-11ef-9840-806e6f6e6963}\,,UNREVIEWED,,not_recovered
+40480,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67ec-1985-11ef-9840-806e6f6e6963}\,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67ec-1985-11ef-9840-806e6f6e6963}\,,UNREVIEWED,,not_recovered
+40481,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67ef-1985-11ef-9840-806e6f6e6963}\,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67ef-1985-11ef-9840-806e6f6e6963}\,,UNREVIEWED,,not_recovered
+40676,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{68AD045D-A60B-4E2E-BC0E-3B43DE6B671F},REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{68AD045D-A60B-4E2E-BC0E-3B43DE6B671F},,UNREVIEWED,,not_recovered
+40714,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Comdlg32,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Comdlg32,,UNREVIEWED,,not_recovered
+40716,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer,,UNREVIEWED,,not_recovered
+40753,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Shell Extensions\Cached,REG:OPENED:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Shell Extensions\Cached,,UNREVIEWED,,not_recovered
+100647,REG:OPENED:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\KnownClasses,REG:OPENED:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\KnownClasses,,UNREVIEWED,,not_recovered
+104290,REG:OPENED:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\LanguagePack\SurrogateFallback,REG:OPENED:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\LanguagePack\SurrogateFallback,,UNREVIEWED,,not_recovered
+104300,REG:OPENED:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\LanguagePack\SurrogateFallback\MS Sans Serif,REG:OPENED:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\LanguagePack\SurrogateFallback\MS Sans Serif,,UNREVIEWED,,not_recovered
+110219,REG:OPENED:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\explorer\FolderDescriptions\{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E},REG:OPENED:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\explorer\FolderDescriptions\{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E},,UNREVIEWED,,not_recovered
+110220,REG:OPENED:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\explorer\FolderDescriptions\{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\PropertyBag,REG:OPENED:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\explorer\FolderDescriptions\{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\PropertyBag,,UNREVIEWED,,not_recovered
+112411,REG:OPENED:HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\services\Winsock\Setup Migration\Providers\Tcpip,REG:OPENED:HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\services\Winsock\Setup Migration\Providers\Tcpip,,UNREVIEWED,,not_recovered
+113636,REG:OPENED:HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Winsock\Parameters,REG:OPENED:HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Winsock\Parameters,,UNREVIEWED,,not_recovered
+113637,REG:OPENED:HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Winsock\Setup Migration\Providers,REG:OPENED:HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Winsock\Setup Migration\Providers,,UNREVIEWED,,not_recovered
+119780,REG:OPENED:HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\TIP\{0000897b-83df-4b96-be07-0fb58b01c4a4}\LanguageProfile\0x00000000\{0001bea3-ed56-483d-a2e2-aeae25577436},REG:OPENED:HKEY_LOCAL_MACHINE\Software\Microsoft\CTF\TIP\{0000897b-83df-4b96-be07-0fb58b01c4a4}\LanguageProfile\0x00000000\{0001bea3-ed56-483d-a2e2-aeae25577436},,UNREVIEWED,,not_recovered
+120873,REG:OPENED:HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-21-1333523494-3206289307-1491016761-500,REG:OPENED:HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-21-1333523494-3206289307-1491016761-500,,UNREVIEWED,,not_recovered
+120874,REG:OPENED:HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-21-349486357-1417008628-870289929-500,REG:OPENED:HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-21-349486357-1417008628-870289929-500,,UNREVIEWED,,not_recovered
+120875,REG:OPENED:HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-21-4114181432-2397392814-2180606575-500,REG:OPENED:HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-21-4114181432-2397392814-2180606575-500,,UNREVIEWED,,not_recovered
+124264,REG:OPENED:HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Installer\UserData,REG:OPENED:HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Installer\UserData,,UNREVIEWED,,not_recovered
+130140,REG:OPENED:HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Installer,REG:OPENED:HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Installer,,UNREVIEWED,,not_recovered
+131181,REG:OPENED:HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318},REG:OPENED:HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4d36e972-e325-11ce-bfc1-08002be10318},,UNREVIEWED,,not_recovered
+131375,REG:OPENED:HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LDAP,REG:OPENED:HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LDAP,,UNREVIEWED,,not_recovered
+131394,REG:OPENED:HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\Winsock,REG:OPENED:HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\Winsock,,UNREVIEWED,,not_recovered
+131400,REG:OPENED:HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\Winsock,REG:OPENED:HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters\Winsock,,UNREVIEWED,,not_recovered
+131425,REG:OPENED:HKEY_LOCAL_MACHINE\System\Setup,REG:OPENED:HKEY_LOCAL_MACHINE\System\Setup,,UNREVIEWED,,not_recovered
+140099,REG:READ:HKEY_CURRENT_USER\Keyboard Layout\Toggle\Hotkey,REG:READ:HKEY_CURRENT_USER\Keyboard Layout\Toggle\Hotkey,,UNREVIEWED,,not_recovered
+140100,REG:READ:HKEY_CURRENT_USER\Keyboard Layout\Toggle\Language Hotkey,REG:READ:HKEY_CURRENT_USER\Keyboard Layout\Toggle\Language Hotkey,,UNREVIEWED,,not_recovered
+140101,REG:READ:HKEY_CURRENT_USER\Keyboard Layout\Toggle\Layout Hotkey,REG:READ:HKEY_CURRENT_USER\Keyboard Layout\Toggle\Layout Hotkey,,UNREVIEWED,,not_recovered
+147738,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Command Processor\AutoRun,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Command Processor\AutoRun,,UNREVIEWED,,not_recovered
+147744,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Command Processor\CompletionChar,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Command Processor\CompletionChar,,UNREVIEWED,,not_recovered
+147745,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Command Processor\DefaultColor,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Command Processor\DefaultColor,,UNREVIEWED,,not_recovered
+147746,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Command Processor\DelayedExpansion,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Command Processor\DelayedExpansion,,UNREVIEWED,,not_recovered
+147747,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Command Processor\DisableUNCCheck,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Command Processor\DisableUNCCheck,,UNREVIEWED,,not_recovered
+147748,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Command Processor\EnableExtensions,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Command Processor\EnableExtensions,,UNREVIEWED,,not_recovered
+147762,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Command Processor\PathCompletionChar,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Command Processor\PathCompletionChar,,UNREVIEWED,,not_recovered
+152555,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows\DragDelay,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows\DragDelay,,UNREVIEWED,,not_recovered
+153169,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\UseDoubleClickTimer,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\UseDoubleClickTimer,,UNREVIEWED,,not_recovered
+153296,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58ed-7f9a-11ef-945b-806e6f6e6963}\Data,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58ed-7f9a-11ef-945b-806e6f6e6963}\Data,,UNREVIEWED,,not_recovered
+153297,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58ed-7f9a-11ef-945b-806e6f6e6963}\Generation,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58ed-7f9a-11ef-945b-806e6f6e6963}\Generation,,UNREVIEWED,,not_recovered
+153298,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58ee-7f9a-11ef-945b-806e6f6e6963}\Data,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58ee-7f9a-11ef-945b-806e6f6e6963}\Data,,UNREVIEWED,,not_recovered
+153299,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58ee-7f9a-11ef-945b-806e6f6e6963}\Generation,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58ee-7f9a-11ef-945b-806e6f6e6963}\Generation,,UNREVIEWED,,not_recovered
+153300,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58f1-7f9a-11ef-945b-806e6f6e6963}\Data,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58f1-7f9a-11ef-945b-806e6f6e6963}\Data,,UNREVIEWED,,not_recovered
+153301,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58f1-7f9a-11ef-945b-806e6f6e6963}\Generation,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{748d58f1-7f9a-11ef-945b-806e6f6e6963}\Generation,,UNREVIEWED,,not_recovered
+153302,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{7ace8c1d-1d34-11ef-b467-806e6f6e6963}\Data,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{7ace8c1d-1d34-11ef-b467-806e6f6e6963}\Data,,UNREVIEWED,,not_recovered
+153303,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{7ace8c1d-1d34-11ef-b467-806e6f6e6963}\Generation,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{7ace8c1d-1d34-11ef-b467-806e6f6e6963}\Generation,,UNREVIEWED,,not_recovered
+153304,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{7ace8c1e-1d34-11ef-b467-806e6f6e6963}\Data,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{7ace8c1e-1d34-11ef-b467-806e6f6e6963}\Data,,UNREVIEWED,,not_recovered
+153305,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{7ace8c1e-1d34-11ef-b467-806e6f6e6963}\Generation,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{7ace8c1e-1d34-11ef-b467-806e6f6e6963}\Generation,,UNREVIEWED,,not_recovered
+153306,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{7ace8c21-1d34-11ef-b467-806e6f6e6963}\Data,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{7ace8c21-1d34-11ef-b467-806e6f6e6963}\Data,,UNREVIEWED,,not_recovered
+153307,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{7ace8c21-1d34-11ef-b467-806e6f6e6963}\Generation,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{7ace8c21-1d34-11ef-b467-806e6f6e6963}\Generation,,UNREVIEWED,,not_recovered
+153308,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67eb-1985-11ef-9840-806e6f6e6963}\Data,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67eb-1985-11ef-9840-806e6f6e6963}\Data,,UNREVIEWED,,not_recovered
+153309,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67eb-1985-11ef-9840-806e6f6e6963}\Generation,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67eb-1985-11ef-9840-806e6f6e6963}\Generation,,UNREVIEWED,,not_recovered
+153310,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67ec-1985-11ef-9840-806e6f6e6963}\Data,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67ec-1985-11ef-9840-806e6f6e6963}\Data,,UNREVIEWED,,not_recovered
+153311,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67ec-1985-11ef-9840-806e6f6e6963}\Generation,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67ec-1985-11ef-9840-806e6f6e6963}\Generation,,UNREVIEWED,,not_recovered
+153312,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67ef-1985-11ef-9840-806e6f6e6963}\Data,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67ef-1985-11ef-9840-806e6f6e6963}\Data,,UNREVIEWED,,not_recovered
+153313,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67ef-1985-11ef-9840-806e6f6e6963}\Generation,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPC\Volume\{887e67ef-1985-11ef-9840-806e6f6e6963}\Generation,,UNREVIEWED,,not_recovered
+157202,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\WpadOverride,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\WpadOverride,,UNREVIEWED,,not_recovered
+157319,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\AllowFileCLSIDJunctions,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\AllowFileCLSIDJunctions,,UNREVIEWED,,not_recovered
+157348,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoClose,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoClose,,UNREVIEWED,,not_recovered
+157355,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoDrives,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoDrives,,UNREVIEWED,,not_recovered
+157368,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoNetConnectDisconnect,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoNetConnectDisconnect,,UNREVIEWED,,not_recovered
+157376,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoRecentDocsHistory,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoRecentDocsHistory,,UNREVIEWED,,not_recovered
+157381,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoRun,REG:READ:HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\NoRun,,UNREVIEWED,,not_recovered
+214391,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\TIP\{0000897b-83df-4b96-be07-0fb58b01c4a4}\LanguageProfile\0x00000000\{0001bea3-ed56-483d-a2e2-aeae25577436}\Enable,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CTF\TIP\{0000897b-83df-4b96-be07-0fb58b01c4a4}\LanguageProfile\0x00000000\{0001bea3-ed56-483d-a2e2-aeae25577436}\Enable,,UNREVIEWED,,not_recovered
+227164,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\PageAllocatorSystemHeapIsPrivate,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\PageAllocatorSystemHeapIsPrivate,,UNREVIEWED,,not_recovered
+227165,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\PageAllocatorUseSystemHeap,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OLE\PageAllocatorUseSystemHeap,,UNREVIEWED,,not_recovered
+229503,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SQMClient\Windows\DisabledSessions\GlobalSession,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SQMClient\Windows\DisabledSessions\GlobalSession,,UNREVIEWED,,not_recovered
+229504,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SQMClient\Windows\DisabledSessions\MachineThrottling,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SQMClient\Windows\DisabledSessions\MachineThrottling,,UNREVIEWED,,not_recovered
+235995,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontSubstitutes\MS Shell Dlg,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontSubstitutes\MS Shell Dlg,,UNREVIEWED,,not_recovered
+237271,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-21-1333523494-3206289307-1491016761-500\ProfileImagePath,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-21-1333523494-3206289307-1491016761-500\ProfileImagePath,,UNREVIEWED,,not_recovered
+237272,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-21-349486357-1417008628-870289929-500\ProfileImagePath,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-21-349486357-1417008628-870289929-500\ProfileImagePath,,UNREVIEWED,,not_recovered
+237274,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-21-4114181432-2397392814-2180606575-500\ProfileImagePath,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-21-4114181432-2397392814-2180606575-500\ProfileImagePath,,UNREVIEWED,,not_recovered
+239745,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DevicePath,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DevicePath,,UNREVIEWED,,not_recovered
+248012,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\AllowFileCLSIDJunctions,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\AllowFileCLSIDJunctions,,UNREVIEWED,,not_recovered
+378629,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\CTF\EnableAnchorContext,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\CTF\EnableAnchorContext,,UNREVIEWED,,not_recovered
+401579,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Windows\LoadAppInit_DLLs,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Windows\LoadAppInit_DLLs,,UNREVIEWED,,not_recovered
+402712,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\CommonFilesDir,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\CommonFilesDir,,UNREVIEWED,,not_recovered
+402851,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\ProgramFilesDir,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\ProgramFilesDir,,UNREVIEWED,,not_recovered
+414018,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\Windows Error Reporting\WMR\Disable,REG:READ:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\Windows Error Reporting\WMR\Disable,,UNREVIEWED,,not_recovered
+417084,REG:READ:HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CMF\Config\SYSTEM,REG:READ:HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\CMF\Config\SYSTEM,,UNREVIEWED,,not_recovered
+417548,REG:READ:HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Nls\CodePage\950,REG:READ:HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Nls\CodePage\950,,UNREVIEWED,,not_recovered
+418321,REG:READ:HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Nls\Language Groups\1,REG:READ:HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Nls\Language Groups\1,,UNREVIEWED,,not_recovered
+418350,REG:READ:HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Nls\Locale\00000409,REG:READ:HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Nls\Locale\00000409,,UNREVIEWED,,not_recovered
+1026936,FILE:EXISTS:c:\,FILE:EXISTS:c:\,,UNREVIEWED,,not_recovered
+1542461,FILE:EXISTS:c:\programdata\microsoft\windows\start menu\programs,FILE:EXISTS:c:\programdata\microsoft\windows\start menu\programs,,UNREVIEWED,,not_recovered
+1668009,FILE:EXISTS:c:\users,FILE:EXISTS:c:\users,,UNREVIEWED,,not_recovered
+1808559,FILE:FAILED:\device\netbt_tcpip_{846ee342-7039-11de-9d20-806e6f6e6963},FILE:FAILED:\device\netbt_tcpip_{846ee342-7039-11de-9d20-806e6f6e6963},,UNREVIEWED,,not_recovered
+1845849,FILE:FAILED:c:\users\administrator\appdata\local\temp,FILE:FAILED:c:\users\administrator\appdata\local\temp,,UNREVIEWED,,not_recovered
+1924020,FILE:OPENED:\\?\pipe\wkssvc,FILE:OPENED:\\?\pipe\wkssvc,,UNREVIEWED,,not_recovered
+1924061,FILE:OPENED:c:\,FILE:OPENED:c:\,,UNREVIEWED,,not_recovered
+1927580,FILE:OPENED:c:\program files (x86),FILE:OPENED:c:\program files (x86),,UNREVIEWED,,not_recovered
+2055798,FILE:OPENED:c:\program files\windows nt\accessories\wordpad.exe,FILE:OPENED:c:\program files\windows nt\accessories\wordpad.exe,,UNREVIEWED,,not_recovered
+2117027,FILE:OPENED:c:\windows\globalization\sorting\sortdefault.nls,FILE:OPENED:c:\windows\globalization\sorting\sortdefault.nls,,UNREVIEWED,,not_recovered
+2118086,FILE:OPENED:c:\windows\system32,FILE:OPENED:c:\windows\system32,,UNREVIEWED,,not_recovered
+2120431,FILE:OPENED:c:\windows\system32\en-us\imageres.dll.mui,FILE:OPENED:c:\windows\system32\en-us\imageres.dll.mui,,UNREVIEWED,,not_recovered
+2120452,FILE:OPENED:c:\windows\system32\en-us\netmsg.dll.mui,FILE:OPENED:c:\windows\system32\en-us\netmsg.dll.mui,,UNREVIEWED,,not_recovered
+2129256,FILE:READ:\\?\pipe\wkssvc,FILE:READ:\\?\pipe\wkssvc,,UNREVIEWED,,not_recovered
+2185628,FILE:RECREATED:\??\nsi,FILE:RECREATED:\??\nsi,,UNREVIEWED,,not_recovered
+2195841,FILE:WRITTEN:\\?\pipe\wkssvc,FILE:WRITTEN:\\?\pipe\wkssvc,,UNREVIEWED,,not_recovered
+2625467,DIRECTORY:CREATED:c:\users,DIRECTORY:CREATED:c:\users,,UNREVIEWED,,not_recovered
+2625469,DIRECTORY:CREATED:c:\users\administrator,DIRECTORY:CREATED:c:\users\administrator,,UNREVIEWED,,not_recovered
+2625487,DIRECTORY:CREATED:c:\users\administrator\appdata,DIRECTORY:CREATED:c:\users\administrator\appdata,,UNREVIEWED,,not_recovered
+2625820,DIRECTORY:CREATED:c:\users\administrator\appdata\local\microsoft\windows\wer\reportarchive,DIRECTORY:CREATED:c:\users\administrator\appdata\local\microsoft\windows\wer\reportarchive,,UNREVIEWED,,not_recovered
+2633869,DIRECTORY:CREATED:c:\users\administrator\appdata\roaming,DIRECTORY:CREATED:c:\users\administrator\appdata\roaming,,UNREVIEWED,,not_recovered
+2636843,DIRECTORY:ENUMERATED:c:\documents and settings\*.*,DIRECTORY:ENUMERATED:c:\documents and settings\*.*,,UNREVIEWED,,not_recovered
+2643480,DIRECTORY:ENUMERATED:c:\perflogs\*.*,DIRECTORY:ENUMERATED:c:\perflogs\*.*,,UNREVIEWED,,not_recovered
+2643483,DIRECTORY:ENUMERATED:c:\perflogs\admin\*.*,DIRECTORY:ENUMERATED:c:\perflogs\admin\*.*,,UNREVIEWED,,not_recovered
+2682340,DIRECTORY:ENUMERATED:c:\users\administrator,DIRECTORY:ENUMERATED:c:\users\administrator,,UNREVIEWED,,not_recovered
+2722838,DIRECTORY:ENUMERATED:c:\windows\system32\*.*,DIRECTORY:ENUMERATED:c:\windows\system32\*.*,,UNREVIEWED,,not_recovered
+2801568,STRING:                                 h,STRING:                                 h,,UNREVIEWED,,not_recovered
+2838308,STRING:         (((((                  h,STRING:         (((((                  h,,UNREVIEWED,,not_recovered
+2838699,STRING:         h((((                  h,STRING:         h((((                  h,,UNREVIEWED,,not_recovered
+2844099,"STRING:        <requestedexecutionlevel level=""asinvoker"" uiaccess=""false""></requestedexecutionlevel>","STRING:        <requestedexecutionlevel level=""asinvoker"" uiaccess=""false""></requestedexecutionlevel>",,UNREVIEWED,,not_recovered
+2844552,"STRING:        <supportedos id=""{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}""/>","STRING:        <supportedos id=""{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}""/>",,UNREVIEWED,,not_recovered
+2848321,STRING:        },STRING:        },,UNREVIEWED,,not_recovered
+2850581,STRING:      </requestedprivileges>,STRING:      </requestedprivileges>,,UNREVIEWED,,not_recovered
+2852128,STRING:      <requestedprivileges>,STRING:      <requestedprivileges>,,UNREVIEWED,,not_recovered
+2867661,"STRING:    processorarchitecture=""x86""","STRING:    processorarchitecture=""x86""",,UNREVIEWED,,not_recovered
+2872709,STRING:  </trustinfo>,STRING:  </trustinfo>,,UNREVIEWED,,not_recovered
+2875351,"STRING:  <trustinfo xmlns=""urn:schemas-microsoft-com:asm.v3"">","STRING:  <trustinfo xmlns=""urn:schemas-microsoft-com:asm.v3"">",,UNREVIEWED,,not_recovered
+2944930,STRING:!this program cannot be run in dos mode.,STRING:!this program cannot be run in dos mode.,,UNREVIEWED,,not_recovered
+3310099,STRING:- abort() has been called,STRING:- abort() has been called,,UNREVIEWED,,not_recovered
+3357783,STRING:.?avexception@std@@,STRING:.?avexception@std@@,,UNREVIEWED,,not_recovered
+3362174,STRING:.aspack,STRING:.aspack,,UNREVIEWED,,not_recovered
+3363719,STRING:.cctor,STRING:.cctor,,UNREVIEWED,,not_recovered
+3364661,STRING:.data$r,STRING:.data$r,,UNREVIEWED,,not_recovered
+3374141,STRING:.pdata,STRING:.pdata,,UNREVIEWED,,not_recovered
+3375604,STRING:.rdata$r,STRING:.rdata$r,,UNREVIEWED,,not_recovered
+3375652,STRING:.reloc,STRING:.reloc,,UNREVIEWED,,not_recovered
+3699511,STRING:7777777,STRING:7777777,,UNREVIEWED,,not_recovered
+3751305,STRING:8ldict,STRING:8ldict,,UNREVIEWED,,not_recovered
+3783330,STRING:9c`u99c\t4,STRING:9c`u99c\t4,,UNREVIEWED,,not_recovered
+3790169,STRING:9ldict,STRING:9ldict,,UNREVIEWED,,not_recovered
+3853929,STRING:;;b&f7b,STRING:;;b&f7b,,UNREVIEWED,,not_recovered
+3889369,STRING:</application>,STRING:</application>,,UNREVIEWED,,not_recovered
+3889568,STRING:</body>,STRING:</body>,,UNREVIEWED,,not_recovered
+3889646,STRING:</dependency>,STRING:</dependency>,,UNREVIEWED,,not_recovered
+3891164,STRING:</form>,STRING:</form>,,UNREVIEWED,,not_recovered
+3891252,STRING:</html>,STRING:</html>,,UNREVIEWED,,not_recovered
+3900195,"STRING:<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes""?>","STRING:<?xml version=""1.0"" encoding=""utf-8"" standalone=""yes""?>",,UNREVIEWED,,not_recovered
+3914518,STRING:<dependency>,STRING:<dependency>,,UNREVIEWED,,not_recovered
+3930900,STRING:<head>,STRING:<head>,,UNREVIEWED,,not_recovered
+4038443,STRING:>ldict,STRING:>ldict,,UNREVIEWED,,not_recovered
+4068744,STRING:?da/b6h,STRING:?da/b6h,,UNREVIEWED,,not_recovered
+4091021,STRING:@.data,STRING:@.data,,UNREVIEWED,,not_recovered
+4091145,STRING:@.reloc,STRING:@.reloc,,UNREVIEWED,,not_recovered
+4105504,STRING:@h??weldj;,STRING:@h??weldj;,,UNREVIEWED,,not_recovered
+4105505,STRING:@h??weldj>,STRING:@h??weldj>,,UNREVIEWED,,not_recovered
+4105775,STRING:@hnfhd,STRING:@hnfhd,,UNREVIEWED,,not_recovered
+4269561,STRING:__based(,STRING:__based(,,UNREVIEWED,,not_recovered
+4273145,STRING:_cicos,STRING:_cicos,,UNREVIEWED,,not_recovered
+4277946,STRING:_initterm,STRING:_initterm,,UNREVIEWED,,not_recovered
+4296534,STRING:`.itext,STRING:`.itext,,UNREVIEWED,,not_recovered
+4296599,STRING:`.rdata,STRING:`.rdata,,UNREVIEWED,,not_recovered
+4296605,STRING:`.rsrc,STRING:`.rsrc,,UNREVIEWED,,not_recovered
+4348636,STRING:a_a^a]a\_,STRING:a_a^a]a\_,,UNREVIEWED,,not_recovered
+4348644,STRING:a_a^a]a\_^],STRING:a_a^a]a\_^],,UNREVIEWED,,not_recovered
+4354710,STRING:accept,STRING:accept,,UNREVIEWED,,not_recovered
+4413990,STRING:b4fhd&b,STRING:b4fhd&b,,UNREVIEWED,,not_recovered
+4427117,STRING:bad allocation,STRING:bad allocation,,UNREVIEWED,,not_recovered
+4434794,STRING:beginpaint,STRING:beginpaint,,UNREVIEWED,,not_recovered
+4499918,STRING:callwindowproca,STRING:callwindowproca,,UNREVIEWED,,not_recovered
+4525101,STRING:cmd.exe,STRING:cmd.exe,,UNREVIEWED,,not_recovered
+4529676,STRING:comctl32.dll,STRING:comctl32.dll,,UNREVIEWED,,not_recovered
+4530610,STRING:computehash,STRING:computehash,,UNREVIEWED,,not_recovered
+4530744,STRING:concat,STRING:concat,,UNREVIEWED,,not_recovered
+4531820,STRING:contains,STRING:contains,,UNREVIEWED,,not_recovered
+4531998,STRING:context,STRING:context,,UNREVIEWED,,not_recovered
+4532114,STRING:control,STRING:control,,UNREVIEWED,,not_recovered
+4535595,STRING:corexitprocess,STRING:corexitprocess,,UNREVIEWED,,not_recovered
+4535738,STRING:cotaskmemfree,STRING:cotaskmemfree,,UNREVIEWED,,not_recovered
+4540427,STRING:createdirectorya,STRING:createdirectorya,,UNREVIEWED,,not_recovered
+4540432,STRING:createdirectoryw,STRING:createdirectoryw,,UNREVIEWED,,not_recovered
+4540446,STRING:createencryptor,STRING:createencryptor,,UNREVIEWED,,not_recovered
+4540854,STRING:createwindowexa,STRING:createwindowexa,,UNREVIEWED,,not_recovered
+4541826,STRING:cryptdecrypt,STRING:cryptdecrypt,,UNREVIEWED,,not_recovered
+4541838,STRING:cryptencrypt,STRING:cryptencrypt,,UNREVIEWED,,not_recovered
+4542077,STRING:cryptstringtobinarya,STRING:cryptstringtobinarya,,UNREVIEWED,,not_recovered
+4576552,STRING:d/;rd'c7crd,STRING:d/;rd'c7crd,,UNREVIEWED,,not_recovered
+4603844,STRING:delete,STRING:delete,,UNREVIEWED,,not_recovered
+4603979,STRING:deletefilea,STRING:deletefilea,,UNREVIEWED,,not_recovered
+4604965,STRING:desktop.ini,STRING:desktop.ini,,UNREVIEWED,,not_recovered
+4612344,STRING:dispatchmessagea,STRING:dispatchmessagea,,UNREVIEWED,,not_recovered
+4612611,STRING:dispose,STRING:dispose,,UNREVIEWED,,not_recovered
+4617674,STRING:dllgetversion,STRING:dllgetversion,,UNREVIEWED,,not_recovered
+4623073,STRING:dosdatetimetofiletime,STRING:dosdatetimetofiletime,,UNREVIEWED,,not_recovered
+4626980,STRING:drawtexta,STRING:drawtexta,,UNREVIEWED,,not_recovered
+4627079,STRING:drdhd7h,STRING:drdhd7h,,UNREVIEWED,,not_recovered
+4648709,STRING:e(?(e8b,STRING:e(?(e8b,,UNREVIEWED,,not_recovered
+4670103,STRING:eabort,STRING:eabort,,UNREVIEWED,,not_recovered
+4691338,STRING:enablewindow,STRING:enablewindow,,UNREVIEWED,,not_recovered
+4691748,STRING:enddialog,STRING:enddialog,,UNREVIEWED,,not_recovered
+4691810,STRING:endpaint,STRING:endpaint,,UNREVIEWED,,not_recovered
+4692708,STRING:entercriticalsection,STRING:entercriticalsection,,UNREVIEWED,,not_recovered
+4693015,STRING:enumprocesses,STRING:enumprocesses,,UNREVIEWED,,not_recovered
+4710093,STRING:exe(;2d,STRING:exe(;2d,,UNREVIEWED,,not_recovered
+4738467,STRING:f9:t!v,STRING:f9:t!v,,UNREVIEWED,,not_recovered
+4792955,STRING:fileversion,STRING:fileversion,,UNREVIEWED,,not_recovered
+4793660,STRING:findfirstfilea,STRING:findfirstfilea,,UNREVIEWED,,not_recovered
+4793661,STRING:findfirstfileexa,STRING:findfirstfileexa,,UNREVIEWED,,not_recovered
+4793662,STRING:findfirstfileexw,STRING:findfirstfileexw,,UNREVIEWED,,not_recovered
+4799048,STRING:flushfilebuffers,STRING:flushfilebuffers,,UNREVIEWED,,not_recovered
+4859513,STRING:get_length,STRING:get_length,,UNREVIEWED,,not_recovered
+4859670,STRING:get_name,STRING:get_name,,UNREVIEWED,,not_recovered
+4860736,STRING:getcomputernamew,STRING:getcomputernamew,,UNREVIEWED,,not_recovered
+4860773,STRING:getconsolecp,STRING:getconsolecp,,UNREVIEWED,,not_recovered
+4860789,STRING:getconsolemode,STRING:getconsolemode,,UNREVIEWED,,not_recovered
+4860871,STRING:getcurrentprocessid,STRING:getcurrentprocessid,,UNREVIEWED,,not_recovered
+4861076,STRING:getenvironmentvariablea,STRING:getenvironmentvariablea,,UNREVIEWED,,not_recovered
+4861106,STRING:getexitcodeprocess,STRING:getexitcodeprocess,,UNREVIEWED,,not_recovered
+4861139,STRING:getfileattributesa,STRING:getfileattributesa,,UNREVIEWED,,not_recovered
+4861159,STRING:getfiles,STRING:getfiles,,UNREVIEWED,,not_recovered
+4861226,STRING:getfullpathnamea,STRING:getfullpathnamea,,UNREVIEWED,,not_recovered
+4861500,STRING:getlogicaldrives,STRING:getlogicaldrives,,UNREVIEWED,,not_recovered
+4861602,STRING:getmodulefilenamew,STRING:getmodulefilenamew,,UNREVIEWED,,not_recovered
+4862138,STRING:getshortpathnamea,STRING:getshortpathnamea,,UNREVIEWED,,not_recovered
+4862183,STRING:getstartupinfow,STRING:getstartupinfow,,UNREVIEWED,,not_recovered
+4862251,STRING:getsysteminfo,STRING:getsysteminfo,,UNREVIEWED,,not_recovered
+4862293,STRING:gettempfilenamea,STRING:gettempfilenamea,,UNREVIEWED,,not_recovered
+4862294,STRING:gettempfilenamew,STRING:gettempfilenamew,,UNREVIEWED,,not_recovered
+4862303,STRING:gettemppatha,STRING:gettemppatha,,UNREVIEWED,,not_recovered
+4862639,STRING:getwindowrect,STRING:getwindowrect,,UNREVIEWED,,not_recovered
+4872738,STRING:globalfree,STRING:globalfree,,UNREVIEWED,,not_recovered
+4930365,STRING:heapalloc,STRING:heapalloc,,UNREVIEWED,,not_recovered
+5002395,STRING:ienumerator,STRING:ienumerator,,UNREVIEWED,,not_recovered
+5016235,STRING:imagelist_create,STRING:imagelist_create,,UNREVIEWED,,not_recovered
+5016236,STRING:imagelist_destroy,STRING:imagelist_destroy,,UNREVIEWED,,not_recovered
+5019674,STRING:initializearray,STRING:initializearray,,UNREVIEWED,,not_recovered
+5020620,STRING:install,STRING:install,,UNREVIEWED,,not_recovered
+5021727,STRING:interlockedexchange,STRING:interlockedexchange,,UNREVIEWED,,not_recovered
+5021898,STRING:internalname,STRING:internalname,,UNREVIEWED,,not_recovered
+5022951,STRING:invalidaterect,STRING:invalidaterect,,UNREVIEWED,,not_recovered
+5025746,STRING:iphlpapi.dll,STRING:iphlpapi.dll,,UNREVIEWED,,not_recovered
+5030108,STRING:isdbcsleadbyte,STRING:isdbcsleadbyte,,UNREVIEWED,,not_recovered
+5031780,STRING:isvalidcodepage,STRING:isvalidcodepage,,UNREVIEWED,,not_recovered
+5031896,STRING:iswindow,STRING:iswindow,,UNREVIEWED,,not_recovered
+5031897,STRING:iswindowenabled,STRING:iswindowenabled,,UNREVIEWED,,not_recovered
+5031901,STRING:iswindowvisible,STRING:iswindowvisible,,UNREVIEWED,,not_recovered
+5143602,STRING:kernel32.dll,STRING:kernel32.dll,,UNREVIEWED,,not_recovered
+5208338,STRING:labels,STRING:labels,,UNREVIEWED,,not_recovered
+5212101,STRING:lca<e3,STRING:lca<e3,,UNREVIEWED,,not_recovered
+5215182,STRING:leavecriticalsection,STRING:leavecriticalsection,,UNREVIEWED,,not_recovered
+5231733,STRING:loader error,STRING:loader error,,UNREVIEWED,,not_recovered
+5232109,STRING:loadresource,STRING:loadresource,,UNREVIEWED,,not_recovered
+5232303,STRING:locale,STRING:locale,,UNREVIEWED,,not_recovered
+5232357,STRING:localfree,STRING:localfree,,UNREVIEWED,,not_recovered
+5232615,STRING:lockresource,STRING:lockresource,,UNREVIEWED,,not_recovered
+5233839,STRING:lookup,STRING:lookup,,UNREVIEWED,,not_recovered
+5239844,STRING:lstrcata,STRING:lstrcata,,UNREVIEWED,,not_recovered
+5239849,STRING:lstrcmpia,STRING:lstrcmpia,,UNREVIEWED,,not_recovered
+5239853,STRING:lstrcpya,STRING:lstrcpya,,UNREVIEWED,,not_recovered
+5239860,STRING:lstrlena,STRING:lstrlena,,UNREVIEWED,,not_recovered
+5281136,STRING:malloc,STRING:malloc,,UNREVIEWED,,not_recovered
+5288318,STRING:memmove,STRING:memmove,,UNREVIEWED,,not_recovered
+5288405,STRING:memset,STRING:memset,,UNREVIEWED,,not_recovered
+5311043,STRING:mscoree.dll,STRING:mscoree.dll,,UNREVIEWED,,not_recovered
+5311452,STRING:msi.dll,STRING:msi.dll,,UNREVIEWED,,not_recovered
+5312373,STRING:msvbvm60.dll,STRING:msvbvm60.dll,,UNREVIEWED,,not_recovered
+5312439,STRING:msvcrt.dll,STRING:msvcrt.dll,,UNREVIEWED,,not_recovered
+5382756,STRING:ntdll.dll,STRING:ntdll.dll,,UNREVIEWED,,not_recovered
+5384718,STRING:nullsoftinst,STRING:nullsoftinst,,UNREVIEWED,,not_recovered
+5437210,STRING:oleaut32.dll,STRING:oleaut32.dll,,UNREVIEWED,,not_recovered
+5437259,STRING:oleinitialize,STRING:oleinitialize,,UNREVIEWED,,not_recovered
+5444854,STRING:openmutexw,STRING:openmutexw,,UNREVIEWED,,not_recovered
+5445105,STRING:operator,STRING:operator,,UNREVIEWED,,not_recovered
+5448852,STRING:originalfilename,STRING:originalfilename,,UNREVIEWED,,not_recovered
+5474224,STRING:p.rsrc,STRING:p.rsrc,,UNREVIEWED,,not_recovered
+5491559,STRING:padpadp,STRING:padpadp,,UNREVIEWED,,not_recovered
+5517021,STRING:pp9e u:ppvwp,STRING:pp9e u:ppvwp,,UNREVIEWED,,not_recovered
+5518150,STRING:pppppp,STRING:pppppp,,UNREVIEWED,,not_recovered
+5518292,STRING:pppppws,STRING:pppppws,,UNREVIEWED,,not_recovered
+5523325,STRING:productcode,STRING:productcode,,UNREVIEWED,,not_recovered
+5523423,STRING:productversion,STRING:productversion,,UNREVIEWED,,not_recovered
+5523673,STRING:programfilesdir,STRING:programfilesdir,,UNREVIEWED,,not_recovered
+5526377,STRING:pssssss,STRING:pssssss,,UNREVIEWED,,not_recovered
+5590655,STRING:qqswj0j@,STRING:qqswj0j@,,UNREVIEWED,,not_recovered
+5640158,STRING:readfile,STRING:readfile,,UNREVIEWED,,not_recovered
+5640348,STRING:readprocessmemory,STRING:readprocessmemory,,UNREVIEWED,,not_recovered
+5641679,STRING:regclosekey,STRING:regclosekey,,UNREVIEWED,,not_recovered
+5641703,STRING:regdeletekeyexw,STRING:regdeletekeyexw,,UNREVIEWED,,not_recovered
+5641710,STRING:regdeletevaluea,STRING:regdeletevaluea,,UNREVIEWED,,not_recovered
+5642246,STRING:regsetvalueexa,STRING:regsetvalueexa,,UNREVIEWED,,not_recovered
+5643673,STRING:remove,STRING:remove,,UNREVIEWED,,not_recovered
+5643844,STRING:removedirectorya,STRING:removedirectorya,,UNREVIEWED,,not_recovered
+5643846,STRING:removedirectoryw,STRING:removedirectoryw,,UNREVIEWED,,not_recovered
+5645701,STRING:return false;,STRING:return false;,,UNREVIEWED,,not_recovered
+5670833,STRING:runtime error     at 00000000,STRING:runtime error     at 00000000,,UNREVIEWED,,not_recovered
+5719174,STRING:sendmessagea,STRING:sendmessagea,,UNREVIEWED,,not_recovered
+5721444,STRING:setbkcolor,STRING:setbkcolor,,UNREVIEWED,,not_recovered
+5721668,STRING:setcurrentdirectorya,STRING:setcurrentdirectorya,,UNREVIEWED,,not_recovered
+5721727,STRING:setdlgitemtexta,STRING:setdlgitemtexta,,UNREVIEWED,,not_recovered
+5721755,STRING:setendoffile,STRING:setendoffile,,UNREVIEWED,,not_recovered
+5721816,STRING:setfilepointerex,STRING:setfilepointerex,,UNREVIEWED,,not_recovered
+5721824,STRING:setfiletime,STRING:setfiletime,,UNREVIEWED,,not_recovered
+5722220,STRING:setservicestatus,STRING:setservicestatus,,UNREVIEWED,,not_recovered
+5722271,STRING:setstdhandle,STRING:setstdhandle,,UNREVIEWED,,not_recovered
+5722372,STRING:settimer,STRING:settimer,,UNREVIEWED,,not_recovered
+5722641,STRING:setup.exe,STRING:setup.exe,,UNREVIEWED,,not_recovered
+5723146,STRING:setwindowpos,STRING:setwindowpos,,UNREVIEWED,,not_recovered
+5727350,STRING:shell32.dll,STRING:shell32.dll,,UNREVIEWED,,not_recovered
+5727381,STRING:shellexecutea,STRING:shellexecutea,,UNREVIEWED,,not_recovered
+5727511,STRING:shgetmalloc,STRING:shgetmalloc,,UNREVIEWED,,not_recovered
+5727799,STRING:shlwapi.dll,STRING:shlwapi.dll,,UNREVIEWED,,not_recovered
+5728263,STRING:showwindow,STRING:showwindow,,UNREVIEWED,,not_recovered
+5730890,STRING:sizeofresource,STRING:sizeofresource,,UNREVIEWED,,not_recovered
+5742347,STRING:special,STRING:special,,UNREVIEWED,,not_recovered
+5749902,STRING:ssvwh ,STRING:ssvwh ,,UNREVIEWED,,not_recovered
+5753474,STRING:stringfileinfo,STRING:stringfileinfo,,UNREVIEWED,,not_recovered
+5817603,STRING:the ordinal %u could not be located in the dynamic link library %s,STRING:the ordinal %u could not be located in the dynamic link library %s,,UNREVIEWED,,not_recovered
+5817651,STRING:the procedure entry point %s could not be located in the dynamic link library %s,STRING:the procedure entry point %s could not be located in the dynamic link library %s,,UNREVIEWED,,not_recovered
+5818815,STRING:this program must be run under win32,STRING:this program must be run under win32,,UNREVIEWED,,not_recovered
+5832017,STRING:toarray,STRING:toarray,,UNREVIEWED,,not_recovered
+5837666,STRING:trackpopupmenu,STRING:trackpopupmenu,,UNREVIEWED,,not_recovered
+5837953,STRING:translation,STRING:translation,,UNREVIEWED,,not_recovered
+5904345,STRING:unhandledexceptionfilter,STRING:unhandledexceptionfilter,,UNREVIEWED,,not_recovered
+5910487,STRING:uqpxy]y[,STRING:uqpxy]y[,,UNREVIEWED,,not_recovered
+5913755,STRING:user32,STRING:user32,,UNREVIEWED,,not_recovered
+5920401,STRING:uvwatauavawh,STRING:uvwatauavawh,,UNREVIEWED,,not_recovered
+5957765,STRING:varfileinfo,STRING:varfileinfo,,UNREVIEWED,,not_recovered
+5970218,STRING:virtualallocex,STRING:virtualallocex,,UNREVIEWED,,not_recovered
+5970268,STRING:virtualquery,STRING:virtualquery,,UNREVIEWED,,not_recovered
+5984385,STRING:vs_version_info,STRING:vs_version_info,,UNREVIEWED,,not_recovered
+6026544,STRING:watauavawh,STRING:watauavawh,,UNREVIEWED,,not_recovered
+6048565,STRING:wow64disablewow64fsredirection,STRING:wow64disablewow64fsredirection,,UNREVIEWED,,not_recovered
+6052560,STRING:writeconsolew,STRING:writeconsolew,,UNREVIEWED,,not_recovered
+6056459,STRING:wtsapi32.dll,STRING:wtsapi32.dll,,UNREVIEWED,,not_recovered
+6057974,STRING:wuser32.dll,STRING:wuser32.dll,,UNREVIEWED,,not_recovered
+6061534,STRING:wwwpws,STRING:wwwpws,,UNREVIEWED,,not_recovered
+6061759,STRING:wwwwww,STRING:wwwwww,,UNREVIEWED,,not_recovered
+6061831,STRING:wwwwwwww,STRING:wwwwwwww,,UNREVIEWED,,not_recovered
+6062160,STRING:wwwwwx,STRING:wwwwwx,,UNREVIEWED,,not_recovered
+6159327,STRING:y_^][y,STRING:y_^][y,,UNREVIEWED,,not_recovered
+6407551,SYSTEM:DLL_LOADED:advapi32,SYSTEM:DLL_LOADED:advapi32,,UNREVIEWED,,not_recovered
+6407552,SYSTEM:DLL_LOADED:advapi32.dll,SYSTEM:DLL_LOADED:advapi32.dll,,UNREVIEWED,,not_recovered
+6412202,SYSTEM:DLL_LOADED:c:\windows\system32\imm32.dll,SYSTEM:DLL_LOADED:c:\windows\system32\imm32.dll,,UNREVIEWED,,not_recovered
+6412331,SYSTEM:DLL_LOADED:c:\windows\system32\ole32.dll,SYSTEM:DLL_LOADED:c:\windows\system32\ole32.dll,,UNREVIEWED,,not_recovered
+6412433,SYSTEM:DLL_LOADED:c:\windows\system32\uxtheme.dll,SYSTEM:DLL_LOADED:c:\windows\system32\uxtheme.dll,,UNREVIEWED,,not_recovered
+6412440,SYSTEM:DLL_LOADED:c:\windows\system32\version.dll,SYSTEM:DLL_LOADED:c:\windows\system32\version.dll,,UNREVIEWED,,not_recovered
+6412496,SYSTEM:DLL_LOADED:c:\windows\system32\wship6.dll,SYSTEM:DLL_LOADED:c:\windows\system32\wship6.dll,,UNREVIEWED,,not_recovered
+6412497,SYSTEM:DLL_LOADED:c:\windows\system32\wshtcpip.dll,SYSTEM:DLL_LOADED:c:\windows\system32\wshtcpip.dll,,UNREVIEWED,,not_recovered
+6412506,SYSTEM:DLL_LOADED:c:\windows\system32\xmllite.dll,SYSTEM:DLL_LOADED:c:\windows\system32\xmllite.dll,,UNREVIEWED,,not_recovered
+6412541,SYSTEM:DLL_LOADED:c:\windows\syswow64\msctf.dll,SYSTEM:DLL_LOADED:c:\windows\syswow64\msctf.dll,,UNREVIEWED,,not_recovered
+6412694,SYSTEM:DLL_LOADED:c:\windows\winsxs\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17514_none_2b24536c71ed437a\gdiplus.dll,SYSTEM:DLL_LOADED:c:\windows\winsxs\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17514_none_2b24536c71ed437a\gdiplus.dll,,UNREVIEWED,,not_recovered
+6412705,SYSTEM:DLL_LOADED:cfgmgr32.dll,SYSTEM:DLL_LOADED:cfgmgr32.dll,,UNREVIEWED,,not_recovered
+6412719,SYSTEM:DLL_LOADED:comctl32.dll,SYSTEM:DLL_LOADED:comctl32.dll,,UNREVIEWED,,not_recovered
+6412736,SYSTEM:DLL_LOADED:crypt32.dll,SYSTEM:DLL_LOADED:crypt32.dll,,UNREVIEWED,,not_recovered
+6412800,SYSTEM:DLL_LOADED:dwmapi.dll,SYSTEM:DLL_LOADED:dwmapi.dll,,UNREVIEWED,,not_recovered
+6412885,SYSTEM:DLL_LOADED:gdiplus.dll,SYSTEM:DLL_LOADED:gdiplus.dll,,UNREVIEWED,,not_recovered
+6412960,SYSTEM:DLL_LOADED:imm32.dll,SYSTEM:DLL_LOADED:imm32.dll,,UNREVIEWED,,not_recovered
+6412971,SYSTEM:DLL_LOADED:iphlpapi,SYSTEM:DLL_LOADED:iphlpapi,,UNREVIEWED,,not_recovered
+6413045,SYSTEM:DLL_LOADED:mpr.dll,SYSTEM:DLL_LOADED:mpr.dll,,UNREVIEWED,,not_recovered
+6413071,SYSTEM:DLL_LOADED:msimg32.dll,SYSTEM:DLL_LOADED:msimg32.dll,,UNREVIEWED,,not_recovered
+6413093,SYSTEM:DLL_LOADED:msls31.dll,SYSTEM:DLL_LOADED:msls31.dll,,UNREVIEWED,,not_recovered
+6413127,SYSTEM:DLL_LOADED:netutils.dll,SYSTEM:DLL_LOADED:netutils.dll,,UNREVIEWED,,not_recovered
+6413138,SYSTEM:DLL_LOADED:nsi.dll,SYSTEM:DLL_LOADED:nsi.dll,,UNREVIEWED,,not_recovered
+6413231,SYSTEM:DLL_LOADED:rasman.dll,SYSTEM:DLL_LOADED:rasman.dll,,UNREVIEWED,,not_recovered
+6413237,SYSTEM:DLL_LOADED:riched20,SYSTEM:DLL_LOADED:riched20,,UNREVIEWED,,not_recovered
+6413238,SYSTEM:DLL_LOADED:riched20.dll,SYSTEM:DLL_LOADED:riched20.dll,,UNREVIEWED,,not_recovered
+6413285,SYSTEM:DLL_LOADED:shlwapi.dll,SYSTEM:DLL_LOADED:shlwapi.dll,,UNREVIEWED,,not_recovered
+6413307,SYSTEM:DLL_LOADED:sspicli.dll,SYSTEM:DLL_LOADED:sspicli.dll,,UNREVIEWED,,not_recovered
+6413337,SYSTEM:DLL_LOADED:urlmon.dll,SYSTEM:DLL_LOADED:urlmon.dll,,UNREVIEWED,,not_recovered
+6413338,SYSTEM:DLL_LOADED:user32,SYSTEM:DLL_LOADED:user32,,UNREVIEWED,,not_recovered
+6413344,SYSTEM:DLL_LOADED:usp10.dll,SYSTEM:DLL_LOADED:usp10.dll,,UNREVIEWED,,not_recovered
+6413348,SYSTEM:DLL_LOADED:uxtheme.dll,SYSTEM:DLL_LOADED:uxtheme.dll,,UNREVIEWED,,not_recovered
+6413363,SYSTEM:DLL_LOADED:version.dll,SYSTEM:DLL_LOADED:version.dll,,UNREVIEWED,,not_recovered
+6413491,SYSTEM:GUID:{000214f9-0000-0000-c000-000000000046},SYSTEM:GUID:{000214f9-0000-0000-c000-000000000046},,UNREVIEWED,,not_recovered
+6413657,SYSTEM:GUID:{2933bf81-7b36-11d2-b20e-00c04f983e60},SYSTEM:GUID:{2933bf81-7b36-11d2-b20e-00c04f983e60},,UNREVIEWED,,not_recovered
+6413830,SYSTEM:GUID:{56fdf344-fd6d-11d0-958a-006097c9a090},SYSTEM:GUID:{56fdf344-fd6d-11d0-958a-006097c9a090},,UNREVIEWED,,not_recovered
+6414360,SYSTEM:GUID:{ea1afb91-9e28-4b86-90e9-9e9f8a5eefaf},SYSTEM:GUID:{ea1afb91-9e28-4b86-90e9-9e9f8a5eefaf},,UNREVIEWED,,not_recovered
+6414405,SYSTEM:GUID:{f5078f32-c551-11d3-89b9-0000f81fe221},SYSTEM:GUID:{f5078f32-c551-11d3-89b9-0000f81fe221},,UNREVIEWED,,not_recovered
+6422071,DROP:EXTENSION:bmp,DROP:EXTENSION:bmp,,UNREVIEWED,,not_recovered
+6423452,DROP:EXTENSION:dat,DROP:EXTENSION:dat,,UNREVIEWED,,not_recovered
+6423768,DROP:EXTENSION:dll,DROP:EXTENSION:dll,,UNREVIEWED,,not_recovered
+6425224,DROP:EXTENSION:exe,DROP:EXTENSION:exe,,UNREVIEWED,,not_recovered
+6428606,DROP:EXTENSION:ini,DROP:EXTENSION:ini,,UNREVIEWED,,not_recovered
+6431041,DROP:EXTENSION:log,DROP:EXTENSION:log,,UNREVIEWED,,not_recovered
+6434638,DROP:EXTENSION:png,DROP:EXTENSION:png,,UNREVIEWED,,not_recovered
+6438330,DROP:EXTENSION:ttf,DROP:EXTENSION:ttf,,UNREVIEWED,,not_recovered
+6440376,DROP:EXTENSION:wav,DROP:EXTENSION:wav,,UNREVIEWED,,not_recovered
+6441505,DROP:EXTENSION:xml,DROP:EXTENSION:xml,,UNREVIEWED,,not_recovered
+6443490,DROP:TYPE:ascii_text,DROP:TYPE:ascii_text,,UNREVIEWED,,not_recovered
+6443496,"DROP:TYPE:ascii_text,_with_crlf_line_terminators","DROP:TYPE:ascii_text,_with_crlf_line_terminators",,UNREVIEWED,,not_recovered
+6444748,DROP:TYPE:empty,DROP:TYPE:empty,,UNREVIEWED,,not_recovered
+6452112,"DROP:TYPE:little-endian_utf-16_unicode_text,_with_crlf,_cr_line_terminators","DROP:TYPE:little-endian_utf-16_unicode_text,_with_crlf,_cr_line_terminators",,UNREVIEWED,,not_recovered
+6456061,"DROP:TYPE:pc_bitmap,_windows_3.x_format,_164_x_314_x_24","DROP:TYPE:pc_bitmap,_windows_3.x_format,_164_x_314_x_24",,UNREVIEWED,,not_recovered
+6457209,"DROP:TYPE:pe32+_executable_(console)_x86-64,_for_ms_windows","DROP:TYPE:pe32+_executable_(console)_x86-64,_for_ms_windows",,UNREVIEWED,,not_recovered
+6457217,"DROP:TYPE:pe32+_executable_(dll)_(gui)_x86-64,_for_ms_windows","DROP:TYPE:pe32+_executable_(dll)_(gui)_x86-64,_for_ms_windows",,UNREVIEWED,,not_recovered
+6457233,"DROP:TYPE:pe32_executable_(dll)_(console)_intel_80386,_for_ms_windows","DROP:TYPE:pe32_executable_(dll)_(console)_intel_80386,_for_ms_windows",,UNREVIEWED,,not_recovered
+6457239,"DROP:TYPE:pe32_executable_(dll)_(gui)_intel_80386,_for_ms_windows","DROP:TYPE:pe32_executable_(dll)_(gui)_intel_80386,_for_ms_windows",,UNREVIEWED,,not_recovered
+6457244,"DROP:TYPE:pe32_executable_(dll)_(gui)_intel_80386_(stripped_to_external_pdb),_for_ms_windows","DROP:TYPE:pe32_executable_(dll)_(gui)_intel_80386_(stripped_to_external_pdb),_for_ms_windows",,UNREVIEWED,,not_recovered
+6457252,"DROP:TYPE:pe32_executable_(gui)_intel_80386,_for_ms_windows,_nullsoft_installer_self-extracting_archive","DROP:TYPE:pe32_executable_(gui)_intel_80386,_for_ms_windows,_nullsoft_installer_self-extracting_archive",,UNREVIEWED,,not_recovered
+6468009,"DROP:TYPE:xml_1.0_document,_ascii_text,_with_crlf_line_terminators","DROP:TYPE:xml_1.0_document,_ascii_text,_with_crlf_line_terminators",,UNREVIEWED,,not_recovered
+6468013,"DROP:TYPE:xml_1.0_document,_ascii_text,_with_very_long_lines,_with_crlf_line_terminators","DROP:TYPE:xml_1.0_document,_ascii_text,_with_very_long_lines,_with_crlf_line_terminators",,UNREVIEWED,,not_recovered
+6468069,SIGNATURE:allocates_execute_remote_process,SIGNATURE:allocates_execute_remote_process,remote_process_allocation,ABSTRACT,MLRan signature generalized to canonical runtime behavior.,existing_partial_mapping
+6468070,SIGNATURE:allocates_rwx,SIGNATURE:allocates_rwx,,UNREVIEWED,,not_recovered
+6468080,SIGNATURE:antisandbox_foregroundwindows,SIGNATURE:antisandbox_foregroundwindows,,UNREVIEWED,,not_recovered
+6468089,SIGNATURE:antivm_disk_size,SIGNATURE:antivm_disk_size,,UNREVIEWED,,not_recovered
+6468099,SIGNATURE:antivm_queries_computername,SIGNATURE:antivm_queries_computername,,UNREVIEWED,,not_recovered
+6468124,SIGNATURE:console_output,SIGNATURE:console_output,,UNREVIEWED,,not_recovered
+6468132,SIGNATURE:dead_host,SIGNATURE:dead_host,,UNREVIEWED,,not_recovered
+6468147,SIGNATURE:exe_appdata,SIGNATURE:exe_appdata,execution_from_user_writable_location,ABSTRACT,MLRan signature generalized to canonical runtime behavior.,existing_partial_mapping
+6468152,SIGNATURE:has_authenticode,SIGNATURE:has_authenticode,,UNREVIEWED,,not_recovered
+6468163,SIGNATURE:injection_modifies_memory,SIGNATURE:injection_modifies_memory,process_injection_memory_modification,ABSTRACT,MLRan signature generalized to canonical runtime behavior.,existing_partial_mapping
+6468165,SIGNATURE:injection_ntsetcontextthread,SIGNATURE:injection_ntsetcontextthread,,UNREVIEWED,,not_recovered
+6468166,SIGNATURE:injection_process_search,SIGNATURE:injection_process_search,process_enumeration,ABSTRACT,MLRan signature generalized to canonical runtime behavior.,existing_partial_mapping
+6468169,SIGNATURE:injection_runpe,SIGNATURE:injection_runpe,process_injection_execution,ABSTRACT,MLRan signature generalized to canonical runtime behavior.,existing_partial_mapping
+6468170,SIGNATURE:injection_write_memory,SIGNATURE:injection_write_memory,cross_process_memory_write,ABSTRACT,MLRan signature generalized to canonical runtime behavior.,existing_partial_mapping
+6468193,SIGNATURE:network_http,SIGNATURE:network_http,http_network_activity,ABSTRACT,MLRan signature generalized to canonical runtime behavior.,existing_partial_mapping
+6468195,SIGNATURE:network_icmp,SIGNATURE:network_icmp,icmp_network_activity,ABSTRACT,MLRan signature generalized to canonical runtime behavior.,existing_partial_mapping
+6468200,SIGNATURE:nolookup_communication,SIGNATURE:nolookup_communication,dns_lookup_activity,ABSTRACT,MLRan signature generalized to canonical runtime behavior.,existing_partial_mapping
+6468202,SIGNATURE:origin_langid,SIGNATURE:origin_langid,,UNREVIEWED,,not_recovered
+6468204,SIGNATURE:packer_entropy,SIGNATURE:packer_entropy,,UNREVIEWED,,not_recovered
+6468211,SIGNATURE:persistence_autorun,SIGNATURE:persistence_autorun,autorun_persistence_activity,ABSTRACT,MLRan signature generalized to canonical runtime behavior.,existing_partial_mapping

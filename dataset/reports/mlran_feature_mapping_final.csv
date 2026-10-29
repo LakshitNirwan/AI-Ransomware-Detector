@@ -1,0 +1,33 @@
+feature_id,feature_name,mlran_category,runtime_category,runtime_status,reason
+5,API:NtProtectVirtualMemory,API,memory_protection_activity,ABSTRACT,API semantics generalized to canonical runtime behavior.
+8,API:CreateProcessInternalW,API,process_creation_activity,ABSTRACT,API semantics generalized to canonical runtime behavior.
+18,API:LdrGetProcedureAddress,API,api_context,EXCLUDE,Low-value/context-specific API retained for audit.
+34,API:NtAllocateVirtualMemory,API,virtual_memory_allocation,ABSTRACT,API semantics generalized to canonical runtime behavior.
+35,API:NtQueryInformationFile,API,file_metadata_query,ABSTRACT,API semantics generalized to canonical runtime behavior.
+37,API:NtOpenProcess,API,process_interaction,ABSTRACT,API semantics generalized to canonical runtime behavior.
+43,API:Process32NextW,API,process_enumeration,ABSTRACT,API semantics generalized to canonical runtime behavior.
+47,API:RegSetValueExW,API,registry_write_activity,ABSTRACT,API semantics generalized to canonical runtime behavior.
+60,API:NtWriteFile,API,file_write_activity,ABSTRACT,API semantics generalized to canonical runtime behavior.
+63,API:NtQueryKey,API,registry_query_activity,ABSTRACT,API semantics generalized to canonical runtime behavior.
+66,API:RegCreateKeyExA,API,registry_key_creation,ABSTRACT,API semantics generalized to canonical runtime behavior.
+71,API:RegCreateKeyExW,API,registry_key_creation,ABSTRACT,API semantics generalized to canonical runtime behavior.
+75,API:NtSetInformationFile,API,file_state_modification,ABSTRACT,API semantics generalized to canonical runtime behavior.
+87,API:NtQueryDirectoryFile,API,directory_enumeration,ABSTRACT,API semantics generalized to canonical runtime behavior.
+111,API:GetFileAttributesExW,API,file_metadata_lookup,ABSTRACT,API semantics generalized to canonical runtime behavior.
+124,API:CreateDirectoryW,API,directory_create,ABSTRACT,API semantics generalized to canonical runtime behavior.
+134,API:SetWindowsHookExW,API,hook_activity,ABSTRACT,API semantics generalized to canonical runtime behavior.
+135,API:GetFileInformationByHandle,API,file_metadata_lookup,ABSTRACT,API semantics generalized to canonical runtime behavior.
+155,API:WriteProcessMemory,API,cross_process_memory_write,ABSTRACT,API semantics generalized to canonical runtime behavior.
+186,API:RemoveDirectoryA,API,directory_deletion,ABSTRACT,API semantics generalized to canonical runtime behavior.
+208,API:RemoveDirectoryW,API,directory_deletion,ABSTRACT,API semantics generalized to canonical runtime behavior.
+227,API:RtlAddVectoredExceptionHandler,API,exception_handler_registration,ABSTRACT,API semantics generalized to canonical runtime behavior.
+6468069,SIGNATURE:allocates_execute_remote_process,SIGNATURE,remote_process_allocation,ABSTRACT,MLRan signature generalized to canonical runtime behavior.
+6468147,SIGNATURE:exe_appdata,SIGNATURE,execution_from_user_writable_location,ABSTRACT,MLRan signature generalized to canonical runtime behavior.
+6468163,SIGNATURE:injection_modifies_memory,SIGNATURE,process_injection_memory_modification,ABSTRACT,MLRan signature generalized to canonical runtime behavior.
+6468166,SIGNATURE:injection_process_search,SIGNATURE,process_enumeration,ABSTRACT,MLRan signature generalized to canonical runtime behavior.
+6468169,SIGNATURE:injection_runpe,SIGNATURE,process_injection_execution,ABSTRACT,MLRan signature generalized to canonical runtime behavior.
+6468170,SIGNATURE:injection_write_memory,SIGNATURE,cross_process_memory_write,ABSTRACT,MLRan signature generalized to canonical runtime behavior.
+6468193,SIGNATURE:network_http,SIGNATURE,http_network_activity,ABSTRACT,MLRan signature generalized to canonical runtime behavior.
+6468195,SIGNATURE:network_icmp,SIGNATURE,icmp_network_activity,ABSTRACT,MLRan signature generalized to canonical runtime behavior.
+6468200,SIGNATURE:nolookup_communication,SIGNATURE,dns_lookup_activity,ABSTRACT,MLRan signature generalized to canonical runtime behavior.
+6468211,SIGNATURE:persistence_autorun,SIGNATURE,autorun_persistence_activity,ABSTRACT,MLRan signature generalized to canonical runtime behavior.
